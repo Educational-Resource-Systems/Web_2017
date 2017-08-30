@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERS | Educational Resource Systems Inc.</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/content_style.css" rel="stylesheet" type="text/css">
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/accordion-style.css" type="text/css">
+
+<script src="js/respond.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/header_size.js"></script>
+<script type="text/javascript" src="js/menus.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
+
+ <script type="text/javascript" charset="utf-8">
+  /*load slider script*/
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+    init();
+  });
+  /*resize for orientation change*/
+  $(window).on("orientationchange",function(){
+  		location.reload(true);
+  });
+	
+</script>
+<style> #header{background-color:rgba(0,0,0,0); box-shadow: 0px 3px 5px rgba(50, 50, 50, 0);} #header.smaller{background-color:rgba(0,0,0,.65); box-shadow: 0px 3px 5px rgba(50, 50, 50, .1);}</style>
+</head>
+<body>
+<header id="header" style="min-width:1024px;">
+<div id="logo" onclick="location.href = 'index.html';"><a href=""></a></div>
+
+<div id="header_menu">
+<!--menu inserted from javascript-->
+
+<!--<script>insertMenu();</script>-->
+
+<div id="menu1" style="display:block;"><script>menuMain();</script></div>
+
+<div id="menu2" style="display:none;"><script>menuHam();</script></div>
+
+
+</div><!--end header menu-->
+
+</header>
+
+<!----- content ----->
+    <div id="heading" class="imageSection" style="width:100%;
+	background-image: url(img/pages/ourClients_main.png);">
+		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Our Clients</h1>
+		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">We take pride in our long-term client relationships!</h2>
+    </div>
+    
+        <div class="subHeadText">
+            <h2>Since 1994, ERS has enjoyed successful professional relationships with a number of leading pharmaceutical and biotech clients across the industry. The list of our clients represents a cross-section of small, medium, and large companies with leading brands in a variety of national and international markets.</h2>
+        </div>
+    
+   <div class="imageSection" id="timeline"><img style="width:100%; margin-top:-40px;" src="img/pages/ourClients_clientList.png"></div>
+    
+<div class="imageSection" id="block" style="width:100%; height:300px; background-color:rgb(50,138,194);">
+        
+<article class="tabs">
+  <section id="tab1">
+    <h2><a href="#tab1"><img class="logoTab" src="img/btn/btnClients_merck.png" width="250" height="85"></a></h2>
+      <div class="tab-content">The workshops were precise and well executed. They were very useful and increased my knowledge that I carried into the field. <br /><br />
+          -  Merck</div>
+  </section>
+  <section id="tab2">
+    <h2 style="background-color: #f00;"><a href="#tab2" ><img class="logoTab" src="img/btn/btnClients_bms.png" width="250" height="85"></a></h2>
+      <div class="tab-content">Your team is phenomenal to work with. Your writes have a great style and crucial attention to detail. Your project management is exquisite. <br /><br />
+          -  Bristol-Myers Squibb
+      </div>
+  </section>
+  <section id="tab3">
+    <h2><a href="#tab3"><img class="logoTab" src="img/btn/btnClients_janssen.png" width="250" height="85"></a></h2>
+      <div class="tab-content">ERS consistently exhibited professionalism, creativity and a willingness to do whatever it took to get the job done. <br /><br />
+          - Janssen Pharmaceuticals, Inc.
+      </div>
+  </section>
+</article>
+        
+    </div>
+
+<!--back to top button -->
+<div id="Up" class="backUp" onclick="$(function () {$('body,html').animate({scrollTop: 0}, 800);});"></div>
+<!----- footer ----->
+<div class="footer">
+	<script>footer();</script>
+</div> 
+</body>
+</html>

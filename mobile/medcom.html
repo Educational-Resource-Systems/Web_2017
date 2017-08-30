@@ -1,0 +1,265 @@
+<!doctype html>
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
+<title>ERS | Educational resource Systems Inc.</title>
+
+<link href="css/mobile_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/mobile_accordion-style.css" type="text/css">
+<!--<link rel="stylesheet" href="../css/training_pages.css" type="text/css">-->
+<link rel="stylesheet" href="../css/jquery-ui.css" type="text/css">
+
+<script src="js/respond.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<!--<script type="text/javascript" src="../js/classie.js"></script>-->
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/menus.js"></script>
+<script type="text/javascript" src="js/header_size.js"></script>
+
+</head>
+<body>
+
+<script>
+	$(window).load(function() { 
+    /* initialize header sizing script from header_size.js */
+    init();
+  });
+</script>
+
+    
+<script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-caret-1-s",
+      activeHeader: "ui-icon-caret-1-n"
+    };
+    $( ".accordion" ).accordion({
+      icons: icons
+    });
+  });
+</script>    
+
+<div class="imageSection" id="mainBlock"><img style="width:100%;" src="img/pages/medCom_header.png"></div>
+        
+<div id="menu" style="margin-top:-20px;">
+
+<ul class="accordion-menu" id="mini-menu" style="display:none;">
+	<li class="no-children" style="cursor:pointer;">
+		<a href ="mobile.html" style="font-size:16;">HOME</a>		
+    </li>
+	<li class="has-children">
+		<input type="checkbox" name="group-1" id="group-1">
+		<label for="group-1">ABOUT</label>
+    	<ul>
+    		<li><a href="ourstory.html">Our Story</a></li>
+    		<li><a href="ourteam.html">Our Team</a></li>
+    		<li><a href="ourclients.html">Our Clients</a></li>
+    		<li><a href="areas.html">Therapeutic Areas</a></li>
+    	</ul>
+    </li>
+
+	<li class="has-children">
+		<input type="checkbox" name="group-2" id="group-2">
+		<label for="group-2">SERVICES</label>
+		<ul>
+    		<li><a href="training.html">Life Science Training</a></li>
+    		<li><a href="medcom.html">Medical Com</a></li>
+    	</ul>
+	</li>
+	
+	<li class="has-children">
+		<input type="checkbox" name="group-3" id="group-3">
+		<label for="group-3">CONTACT</label>
+		<ul>
+    		<li><a href="contact.php">Contact</a></li>
+    		<li><a href="careers.html">Careers</a></li>
+    	</ul>	
+    </li>
+    
+    <li class="no-children" style="cursor:pointer;">
+		<!--<input type="checkbox" name="group-4" id="group-4">
+		<label for="group-4">NEWS & VIEWS</label>-->
+		
+		<a href ="news.html" style="font-size:16;">NEWS & VIEWS</a>	
+		
+    </li>
+</ul> <!-- accordion-menu -->
+</div>
+
+<div id="menuButton" onclick="miniMenu();">MENU</div>
+        
+<div class="subHeadText">
+	<h2>ERS offers the full range of educational programs and communication services 
+		provided by a team of content experts skilled in combining scientific proficiency, 
+		marketing savvy and tactical excellence.</h2>
+</div>
+    
+<!-- accordion content section  -->
+    <div id="accordionContainerMobile">    
+    
+<div class="accordion">
+<h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_content.png"></span><span>CONTENT DEVELOPMENT</span></h3>
+
+<div>
+    <img src="../img/pages/medcom_ContentDev.png">
+     		<ul id="mobileAccordion">
+                <li>Peer-reviewed publications</li>
+                <li>Monographs/newsletters/advertorials</li>
+                <li>White papers/editorials</li>
+                <li>Abstracts/posters/slides</li>
+                <li>Meeting proceedings</li>
+                <li>Content verification</li>
+                <li>Reference retrieval</li>
+                <li>Full service graphic and production support</li>
+            </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_KOL.png"></span>KOL ID, STRATEGY, AND ENGAGEMENT</h3>
+  <div>
+    <img src="../img/pages/medcom_KOL_ID.png">
+            <ul id="mobileAccordion">
+                <li>Identification, validation, KOL mapping</li>
+                <li>Steering committees</li>
+                <li>Investigator’s meetings</li>
+                <li>Expert advisory boards</li>
+                <li>Executive encounters/interviews</li>
+                <li>Congress meet-and-greets</li>
+                <li>Round tables</li>
+                <li>KOL portal</li>
+           </ul>
+  </div>
+    
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_speaker.png"></span>SPEAKER TRAINING</h3>
+  <div>
+    <img src="../img/pages/medcom_SpeakerTraining.png">
+            <ul id="mobileAccordion">
+                <li>Train-the-trainer</li>
+                <li class="listHolder">
+                    <div class="sublist">
+                    <ul>
+                        <li>Live and remote</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>Ancillary services/slides/handbooks</li>
+                <li>Speaker portal</li>
+           </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_advocacy.png"></span>ADVOCACY DEVELOPMENT</h3>
+  <div>
+    <img src="../img/pages/medcom_AdvocacyDev.png">
+            <ul id="mobileAccordion">
+                <li>Advisory boards</li>
+                <li class="listHolder">
+                        <div class="sublist">
+                            <ul>
+                                <li>National, regional, local</li>
+                                <li>Commercial or clinical</li>
+                                <li>Intra- or interdisciplinary</li>
+                                <li>Live or virtual</li>
+                                <li>Didactic, interactive, workshops</li>
+                            </ul>
+                        </div>
+                </li>
+                <li>Tailored educational initiatives</li>
+           </ul>
+  </div>
+    
+  <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_planning.png"></span>PUB PLANNING AND EXECUTION</h3>
+  <div>
+    <img src="../img/pages/medcom_PubPlanning.png">
+            <ul id="mobileAccordion">
+                <li>Needs assessment/SWOT</li>
+                <li>Target audience identification</li>
+                <li>Key communications analysis</li>
+                <li>Target journal and meeting identification</li>
+                <li>Timeline of key communications roll out</li>
+                <li class="listHolder">
+                    <div class="sublist">
+                    <ul>
+                        <li>Product lifecycle development plan</li>
+                    </ul>
+                    </div>
+                </li>
+                <li>Publication and meeting recommendations</li>
+            </ul>
+  </div>
+  
+  <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_meetings.png"></span>MEETINGS AND EVENTS</h3>
+  <div>
+    <img src="../img/pages/medcom_Meetings_Events.png">
+      <div class="twoCollist">
+                            <ul id="mobileAccordion">
+                                <li>Promotional outreach</li>
+                                <li class="listHolder">  
+                                    <div class="sublist2"> 
+                                    <ul>
+                                        <li>Product theaters</li>
+                                        <li>Dinner meetings</li>
+                                        <li>Small group events</li>
+                                        <li>Expert-on-demand</li>
+                                    </ul>
+                                    </div>
+                                </li>
+                                <li>Congress outreach</li>
+                                <li class="listHolder">   
+                                    <div class="sublist2">   
+                                    <ul>
+                                        <li>Symposia</li>
+                                        <li>Social engagements</li>
+                                    </ul>
+                                    </div>
+                                </li>
+                            </ul>
+          </div>
+       <div class="twoCollistRight">
+                            <ul id="mobileAccordion">
+                                <li>Webcasts/webinars</li>
+                                <li>Event management/ logistics</li>
+                                <li>Compliance and Sunshine Act reporting</li>
+                                <li>Society Engagement</li>
+                            </ul>
+                        </div>
+  </div>
+    
+<h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_education.png"></span>PATIENT EDUCATION</h3>
+
+  <div>
+    <img src="../img/pages/medcom_PatientEducation.png">
+     		<ul  id="mobileAccordion">
+                <li>Advocacy networks/communities/social media</li>
+                <li>Newsletters/ brochures</li>
+                <li>Game-based learning</li>
+                <li>Patient companion apps</li>
+            </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_messaging.png"></span>SCIENTIFIC MESSAGE PLATFORMS</h3>
+  <div>
+    <img src="../img/pages/medcom_Gap.png">
+            <ul  id="mobileAccordion">
+                <li>Define and get consensus on core concepts</li>
+                <li>Lexicon development and consensus</li>
+                <li>Competitive assessment</li>
+                <li>Educational gap analysis</li>
+                <li>Evidence-based core scientific statement development</li>
+           </ul>
+  </div>
+    
+</div><!-- end accordion  -->    
+</div>    <!-- end accordion container -->
+
+    
+
+<!----- footer ----->
+<div class="footer">
+    <script>footer();</script>
+</div> 
+</body>
+</html>
+
+

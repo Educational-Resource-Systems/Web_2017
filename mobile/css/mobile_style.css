@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***************** global ***************/
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../img/AvenirLTStd-Book_4.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../../img/Lato-Regular.woff') format('woff'),
+         url('../../img/Lato-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../../img/Lato-Bold.woff') format('woff'), 
+         url('../../img/Lato-Bold.ttf') format('truetype');
+    font-style: bold;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+html, body{
+margin: 0;
+padding: 0;
+border:0;
+overflow-x:hidden !important;
+max-width: 100% !important;
+font-family: 'Avenir', 'LatoWeb', sans-serif;
+}
+/* we might want to change some of these text values later */
+h1 {
+font-family: 'Avenir', 'LatoWeb', sans-serif;
+font-weight:bold;
+font-size: 3em;
+text-align: center;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+h2 {
+font-family: 'Avenir', 'LatoWeb', sans-serif;
+font-weight: normal;
+font-size: 2em;
+text-align: center;
+color: #fff;
+text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+margin: 0;
+padding: 0;
+}
+h3 {
+font-family: 'Avenir', 'LatoWeb', sans-serif;
+font-weight: normal;
+font-size: 16px;
+text-align: center;
+margin: 5px 0;
+padding: 0;
+z-index: 1;
+position: relative;
+}
+
+
+/***************** header menu styles **********/
+
+#header {
+z-index:100;
+width: 100%;
+
+/*background: url('../img/header-bg.png');*/
+background-color:rgba(0,0,0,.2);
+box-shadow: 0px 3px 5px rgba(50, 50, 50, .3);
+/*height: 95px;*/
+position: fixed;
+/*margin-top: 30px;*/
+
+}
+#header_menu{
+width:100%;
+}
+
+#header_art{
+background:url('../../img/header_home-1.png')no-repeat; 
+background-size:100% 500px;
+width:100%;
+height:500px;
+margin:0; 
+padding:0; 
+position:relative; 
+}
+
+#hamburger {  
+	cursor:pointer; 
+	background: url('../img/btn_hamburger.png')no-repeat; 
+	background-size:65px 65px; 
+	width: 65px; 
+	height: 65px; 
+	float:right; 
+	margin-top: 20px; 
+	margin-right:50px; 
+}
+
+#nav { float: right; margin-top: 23px;}
+#logo {  
+cursor:pointer; 
+background: url('../../img/ERS_logo.png')no-repeat; 
+background-size:198px 69px; 
+width: 198px; height: 69px; 
+color: #fff; text-decoration: none; 
+font-size: 30px; 
+margin-top: 12px; 
+margin-left:auto;
+margin-right:auto; 
+color: #fff; 
+font-family: 'Avenir', sans-serif; 
+font-weight: bold; 
+position:relative; }
+#nav ul{
+list-style: none;
+display: block;
+margin: 0 auto;
+list-style: none;
+}
+#nav li{
+margin-top: 9px;
+float: left;
+padding-left: 21px;
+}
+#nav li a { 
+    color: white; 
+    opacity:0.8; 
+    font-size: 16px; 
+    text-decoration: none; 
+    font-family: 'Avenir', 'LatoWeb', sans-serif;
+    font-weight:bold;
+    text-align: center;
+}
+#nav li a.active { 
+    color: white; 
+    opacity:1; 
+}
+#nav li a:hover { 
+    color: black; 
+    opacity:1; 
+}
+#nav .dropdown-content a {
+    font-size:14px; 
+    font-weight:400; 
+    color:black; 
+    opacity:1;
+}
+
+/*** body sections ***/
+
+#menuButton{
+
+height:30px; 
+width:100%; 
+color:black; 
+font-size:1em; 
+text-align:center; 
+font-family: 'Avenir', 'LatoWeb', sans-serif; 
+z-index:500; 
+padding-top:8px; 
+box-shadow:1px 1px 3px rgba(0,0,0,.5);
+margin-top:12px;
+cursor:pointer;
+
+}
+
+.subHeadText{
+	height:100%;
+	padding:25px;
+	padding-bottom:35px;
+}
+.subHeadText h2{
+	font-size:1em;
+	color:black;
+	text-shadow:none;
+}
+
+#learnMore {
+    display: block;
+    width: 189px;
+    height: 55px;
+    cursor:pointer;
+    background:url(../../img/btn/btn_learnMore.png);
+    background-position:0 0;
+	margin: 20px auto;
+}
+
+/*services section*/
+.servicesAreaL {
+	background-image: url(../img/home_bg_services_01.png);
+   	background-size:cover;
+   	background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+	float:left;
+	padding-bottom:20px;
+}
+.servicesAreaR {
+	background-image: url(../img/home_bg_services_02.png);
+   	background-size:cover;
+   	background-repeat: no-repeat;
+    background-position: center; 
+    width: 100%;
+    float:left;
+    padding-bottom:20px;
+}
+
+.services h4 {
+    display: block;
+	font-family: 'Avenir', 'LatoWeb', sans-serif;
+    font-weight: normal;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    margin: 0 50px;
+    margin-left:auto;
+    margin-right:auto;
+    width:320px;   
+}
+
+img.servicesIcon {
+    display: block;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+}
+
+.servicesIcon a {
+    border: none;    
+}
+
+/***********footer  ***********/
+.footer {
+position:relative;
+bottom:0px;
+left:0px;
+width:100%;
+background-color: #18386b;
+margin: 0 auto;
+margin-top:-10px;
+color: #fff;
+}
+
+#footerGroup{
+ margin-left:-20px;
+ margin-right:auto;
+ font-size: 11px;
+}
+.footerIcon {
+    float: left;
+    margin-right: 10px;
+
+}
+
+#footerButton {
+	float:left;
+    color: #fff;
+    margin:0 50px 10px 80px;
+}
+#footerButton p {
+font-family: 'Avenir', 'LatoWeb', sans-serif;
+font-weight: normal;
+color: #fff;
+padding: 0;
+}
+
+#footerButton a {
+text-decoration:none;
+color: #fff;
+}
+#footerButton:hover{
+color: #9bb0ce;
+}
+#mediaGroup {
+    margin:0 auto;
+}
+#footerButtonMedia {
+	float:left;
+    padding: 0 10px 20px 80px;
+}
+
+
+.flexslider{
+width:100%; 
+height:100%;
+display: block;
+position:absolute;
+top:0px;
+left:-4px;
+}
+
+.flexslider .slides img {
+  width:100%;
+  height:100%;
+}
+
+#copyright { color: #fff; height:50px; padding-top:10px; font-family: 'Avenir', 'LatoWeb', sans-serif; font-size: 10px; text-align: center; border-top: thin solid; border-color: #fff; clear: left; }
+#copyright a { text-decoration: none; color: #fff; }

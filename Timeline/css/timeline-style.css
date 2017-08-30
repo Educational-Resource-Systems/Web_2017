@@ -1,0 +1,145 @@
+
+body {
+    background: #efeff0;
+    margin: 0;
+    padding: 0;
+    color: #565656;
+}
+/*@font-face {
+    font-family: 'Avenir';
+    src: url('../img/AvenirLTStd-Book.otf');
+    font-weight: book;
+    font-style: book;
+}
+h2 {
+  font-family: 'Avenir', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+p {
+  font-family: 'Avenir', sans-serif;
+  font-size: 10px;
+  text-align: center;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #cecece;
+}*/
+img {
+	z-index: 1;	
+}
+
+#video1 {
+	position: absolute;
+	top: 121px;
+	left: 218px;
+}
+#video2 {
+	position: absolute;
+	top: 112px;
+	left: 4352px;
+}
+#video3 {
+	position: absolute;
+	top: 112px;
+	left: 6325px;;
+}
+#video4 {
+	position: absolute;
+	top: 112px;
+	left: 8376px;
+}
+#video5 {
+	position: absolute;
+	top: 112px;
+	left: 9462px;
+}
+#video6 {
+	position: absolute;
+	top: 112px;
+	left: 10485px;
+}
+#video7 {
+	position: absolute;
+	top: 112px;
+	left: 11455px;
+}
+#video8 {
+	position: absolute;
+	top: 112px;
+	left: 15583px;
+}
+
+.jdrf {
+	background-image: url(../img/img3.png);
+	width: 1024px;
+	height: 493px;
+}
+.jdrf:hover {
+	background-image: url(../img/img3_over.png);
+	width: 1024px;
+	height: 493px;
+}
+.johnson {
+	background-image: url(../img/img6.png);
+	width: 1024px;
+	height: 493px;
+}
+.johnson:hover {
+	background-image: url(../img/img6_over.png);
+	width: 1024px;
+	height: 493px;
+}
+pre {
+  border:1px solid #000;
+  overflow-x:auto;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+}
+
+.wrapper {
+	max-width: 1024px;
+	max-height: 740px;
+	margin: auto;
+	/*background-image: url(../img/BG-timeline.png);
+	background-repeat: no-repeat;*/
+}
+.timebar {
+	position: relative;
+	bottom: 56px;
+	width: 100%;
+	height: 36px;
+    background-color: #c5c7ca;
+    z-index: -1;
+}
+
+
+#fadeshow1 {
+	position: absolute;
+	top:120px;
+	left: 1295px;
+}
+#fadeshow1 .gallerylayer img { /* make all images inside fadeshow4 scale to 100% of slideshow width */
+width: 472px;
+height: 360px;
+}
+#fadeshow2 {
+	position: absolute;
+	top:110px;
+	left: 6396px;
+}
+#fadeshow2 .gallerylayer img { /* make all images inside fadeshow4 scale to 100% of slideshow width */
+width: 517px;
+height: 380px;
+}

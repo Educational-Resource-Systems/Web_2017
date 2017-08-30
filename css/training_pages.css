@@ -1,0 +1,442 @@
+@charset "utf-8";
+/* CSS Document */
+/*  *Training Page*  */
+#block_text{
+	font-size:1.35em;
+	min-width:400px;
+	float:left;
+	padding:20px;
+	margin-left:50px;
+	margin-top:10px;
+}
+#block_text h3{
+	font-size:1.8em;
+	font-weight:bold;
+	text-align:left;
+}
+
+.buttons_group1 {
+	margin-left:auto;
+	margin-right:auto;
+}
+.buttons_group2 {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+li.listHolder {
+    list-style: none;
+    margin: 0;
+}
+.sublist {
+    display: inline-block;
+}
+.sublist ul {
+    margin: 0;
+}
+.sublist li {
+    list-style: none;
+}
+.sublist li:before { 
+    display: inline-block;
+    content: "-";
+    width: 1em;
+    margin-left: -.5em;
+}
+.sublist2 {
+    display: inline-block;
+}
+.sublist2 ul {
+    margin: 0;
+}
+.sublist2 li {
+    list-style: none;
+}
+.sublist2 li:before { 
+    display: inline-block;
+    content: "-";
+    width: .5em;
+    margin-left: -2em;
+}
+div.twoCollist {
+    display: inline-block;
+    vertical-align: top;
+    width: 54%;
+}
+div.twoCollistRight {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+
+
+/************** below are styles from the first page layout with a jump menu    ****/
+
+#nest1 { position:relative; margin: 0 auto; display:block; }
+#nest1:first-child { padding-top:40px; }
+#nest2 { position:relative; margin: 0 auto; display:block; }
+#nest2:first-child { padding-top:40px; }
+
+.training_buttons { margin: 30px 5px; }
+#train_btn1.training_buttons {
+	background:url(../img/btn/btn_training_curric.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn1.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn2.training_buttons {
+	background:url(../img/btn/btn_training_elearn.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn2.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn3.training_buttons {
+	background:url(../img/btn/btn_training_workshop.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn3.training_buttons:hover {   
+	background-position: 0 192px;  }
+#train_btn4.training_buttons {
+	background:url(../img/btn/btn_training_viz.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn4.training_buttons:hover {   
+	background-position: 0 192px;  }
+#train_btn5.training_buttons {
+	background:url(../img/btn/btn_training_sales.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn5.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn6.training_buttons {
+	background:url(../img/btn/btn_training_blended.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn6.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn7.training_buttons {
+	background:url(../img/btn/btn_training_content.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn7.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn8.training_buttons {
+	background:url(../img/btn/btn_training_broadcast.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn8.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn9.training_buttons {
+	background:url(../img/btn/btn_training_strategy.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn9.training_buttons:hover {   
+	background-position: 0 192px;   }
+#train_btn10.training_buttons {
+	background:url(../img/btn/btn_training_cert.png);
+	background-position: 0 0;
+	background-size: 185px 384px;
+    width: 185px;
+    height: 192px;
+    float: left; }
+#train_btn10.training_buttons:hover {   
+	background-position: 0 192px;   }
+
+
+/*  *MedCom Page*  */
+
+/*a.anchor{
+	display:block;
+	position:relative;
+	top:-500px;
+	visibility:hidden;
+}*/
+
+.solutionsBG {
+    width:100%;
+    height: 600px;
+    min-width:768px;
+    margin: 0 auto;
+    margin-top:0px;  
+    z-index:0;
+    background:url(../img/pages/training_solutions_bg.png);
+	background-position: top center; 
+}
+
+.medical_buttons { margin: 30px 10px; }
+#med_btn1.medical_buttons { 
+	background:url(../img/btn/btn_medcom_contDev.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn1.medical_buttons:hover { 
+	background-position: -1px 210px; }
+#med_btn2.medical_buttons {  
+	background:url(../img/btn/btn_medcom_pubPlan.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left;  }
+#med_btn2.medical_buttons:hover {  
+	background-position: 0 210px;  }
+#med_btn3.medical_buttons {   
+	background:url(../img/btn/btn_medcom_KOL.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn3.medical_buttons:hover {  
+	background-position: -1px 210px;  }
+#med_btn4.medical_buttons {   
+	background:url(../img/btn/btn_medcom_speaker.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left;  }
+#med_btn4.medical_buttons:hover {  
+	background-position: 0 210px;  }
+#med_btn5.medical_buttons {    
+	background:url(../img/btn/btn_medcom_scienceMsg.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn5.medical_buttons:hover {  
+	background-position: 0 210px;  }
+#med_btn6.medical_buttons {    
+	background:url(../img/btn/btn_medcom_advocacy.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn6.medical_buttons:hover {  
+	background-position: -1px 210px;  }
+#med_btn7.medical_buttons {    
+	background:url(../img/btn/btn_medcom_patEd.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn7.medical_buttons:hover {   
+	background-position: -1px 210px;  }
+#med_btn8.medical_buttons {    
+	background:url(../img/btn/btn_medcom_meetings.png);
+	background-position: 0 0;
+    width: 202px;
+    height: 209px;
+    float: left; }
+#med_btn8.medical_buttons:hover {     
+	background-position: -1px 210px; }
+
+
+
+
+/*Contact*/
+#contactGroup p{
+	color:black;
+	font-size:1.3em; 
+	width:200px; 
+	margin-left:50px;
+}
+textarea{
+width:424px;
+height:250px;
+background-color:#e6e6e6;
+}
+#leftCol .title{
+font-size:1.3em;
+}
+#leftCol input[type=text]{
+background-color:#e6e6e6;
+width:424px;
+height:40px;
+}
+
+
+
+#skillList {
+    margin: 0 auto; 
+    width: 1024px; 
+	font-size:1.35em;
+	padding:20px;
+}
+#skillList h3{
+	font-size:1.8em;
+	font-weight:bold;
+	text-align:left;
+}
+#skillList a {
+text-decoration: none;
+color: #222;
+}
+
+ul, ol { 
+font-family: 'Avenir', 'LatoWeb', sans-serif; 
+    color: #222;
+    margin: 1em 0; 
+    padding: 0 0 0 40px; 
+}
+/* text container inside the akkordion */
+#skillList ul {
+    display: block;
+	-webkit-padding-start: 44px
+    }
+.trainingSection {
+    width:1024px; 
+    margin: 0 auto;
+}
+/*.train-section {
+    display: block;
+    height: 450px;
+    border-bottom-style: solid;
+    border-width: .5px;
+    border-color: #565656;
+}*/
+#block_text  ul li:before { 
+    display: inline-block;
+    content: "-";
+    width: 2em;
+    margin-left: -1em;
+}
+
+#block_text ul ul li:before{ 
+    content:"";
+}
+
+#block_text li {
+	font-size:1.1em;
+    line-height: 150%;
+}
+#block_text ul li {
+    list-style-type: none;
+}
+#block_text  ul ul {
+    margin: 0;
+}
+#block_text ul ul li {
+    list-style-type: disc;
+}
+/* accordian styles  */
+#skillList  ul li:before { 
+    display: inline-block;
+    content: "-";
+    width: 2em;
+    margin-left: -1em;
+}
+
+#skillList  ul ul li:before{ 
+    content:"";
+}
+
+#skillList  li {
+	font-size:1.1em;
+    line-height: 150%;
+}
+#skillList  ul li {
+    list-style-type: none;
+}
+#skillList  ul ul {
+    margin: 0;
+}
+#skillList  ul ul li {
+    list-style-type: disc;
+}
+a:focus{
+    outline:0; /*removes the dotted border*/
+}
+
+.contentLeft {
+	/*background:url(../img/pages/training_sampleBlockSmall.png); 
+	background-position: right 50%; 
+	background-repeat: no-repeat;
+	background-size: 324px 290px;*/
+	max-width: 1024px;
+	margin:auto;
+    display: block; 
+	padding: 20px 0;
+    border-bottom-style: solid;
+    border-width: .5px;
+    border-bottom-color: #999;
+}
+.contentLeft img {
+    float: right;
+}
+.contentRight {
+	/*background:url(../img/pages/training_sampleBlockSmall.png); 
+	background-position: left 50%; 
+	background-repeat: no-repeat;
+	background-size: 324px 290px;*/
+	max-width: 1024px;
+	margin:auto; 
+    display: block;
+	padding: 20px 0;
+    border-bottom-style: solid;
+    border-width: .5px;
+    border-bottom-color: #999;
+}
+.height {
+    height: 280px;
+}
+.heightSm {
+    height: 246px;
+}
+.contentRight h3 {
+	margin-left: 490px;
+}
+.contentRight ul {
+	margin-left: 490px;
+}
+.contentRight img { 
+    float: left;
+}
+
+.contentDoubleRight {
+	/*background:url(../img/pages/training_sampleBlockSmall.png); 
+	background-position: left 50%; 
+	background-repeat: no-repeat;
+	background-size: 324px 290px;*/
+	max-width: 1024px;
+	margin:auto; 
+	padding: 20px 0;
+    border-bottom-style: solid;
+    border-width: .5px;
+    border-bottom-color: #999;
+}
+.contentDoubleRight h3 {
+	margin-left: 360px;
+    float: right;
+}
+.contentDoubleRight ul {
+	margin-left: 360px;
+    float: right;
+}

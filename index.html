@@ -1,0 +1,331 @@
+<!doctype html>
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ERS | Educational Resource Systems Inc.</title>
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/content_style.css" rel="stylesheet" type="text/css">
+<link href="css/grid.css" rel="stylesheet" type="text/css">
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/flexslider.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/accordion-style.css" type="text/css">
+
+<script src="js/respond.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/header_size.js"></script>
+<script type="text/javascript" src="js/menus.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
+
+ <script type="text/javascript" charset="utf-8">
+  /*load slider script*/
+  $(window).load(function() {
+  
+    $('.flex1').flexslider();    
+    
+    $('.flex2').flexslider({
+    	animation: "slide",
+    	animationLoop: true,
+    	slideshowSpeed: 5000,
+    	itemWidth: 210,
+    	itemMargin: 5
+    }); 
+    
+    /* initialize header sizing script from header_size.js */
+    init();
+    
+    
+  });
+  
+  /*resize for orientation change*/
+  $(window).on("orientationchange",function(){
+  		location.reload(true);
+  });	
+</script>
+
+<style>
+
+	#footerButton > div > div, #footerButton > div > a > div > div {
+        display: inline-block;
+		vertical-align: middle;
+    }
+	#quotes, #client{
+		min-width: 768px;
+	}
+	.homeIntro{
+		padding-bottom: 50px;
+	}
+	
+	.backUp{
+		z-index:99;
+	}
+
+@media only screen and (min-width: 1051px) {
+	#footerButton {
+		margin:30px 50px 10px 80px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+    #footerGroup {
+        width: 100%;
+    }
+	#footerButton{
+		width: 33%;
+	}
+	.footer{
+		height: auto;
+	}
+	#footerButton > div {
+		width: 100%;
+    }
+	.notlast_footerButton > div{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#footerButton{
+		width: 100%;
+		margin-left: 33%;
+		margin-right: 33%;
+	}
+	.notlast_footerButton > div{
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#quotes, .services, #advantage, .homeIntro, #clients > img{
+		min-width: 100%;
+	}
+	#clients{
+		background-color: #0089BE;
+		padding-bottom: 20px;
+	}
+	#learnMore.clientLink{
+		margin-bottom: 0;
+	}
+	.AreaL_wrap, .AreaR_wrap{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#footerButton{
+		width: 100%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+</style>
+<!--margin:30px 50px 10px 80px;-->
+</head>
+<body>
+<header id="header" style="min-width:1024px; pointer-events:auto;">
+<div id="logo" onclick="$(function () {$('body,html').animate({scrollTop: 0}, 800);});"><a href=""></a></div>
+
+<div id="header_menu">
+<!--menu inserted from javascript-->
+
+<!--<script>insertMenu();</script>-->
+
+<div id="menu1" style="display:block;"><script>menuMain();</script></div>
+
+<div id="menu2" style="display:none;"><script>menuHam();</script></div>
+
+
+</div><!--end header menu-->
+
+</header>
+
+
+<div id="header_art">
+<!--image slider test-->
+ <div class="flexslider flex1">
+  <ul class="slides">
+    <li>
+    <div id="home_1">
+		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">EDUCATIONAL RESOURCE SYSTEMS, INC</h1>
+		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Bridging the gap between Sales Training &amp; Medical Education</h2>
+		<div id="learnMore" onclick="location.href = 'ourstory.html';"></div>
+     </div>
+    </li>
+    <li>
+    <div id="home_2">
+		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">LTEN Excellence Awards</h1>
+		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Innovation Finalists for 3 years in a row!</h2>
+        <img class="LTEN_home" src="img/LTEN-Images.png" width="446" height="102" onclick="location.href='news.html';">
+		<div id="learnMore" onclick="location.href = 'news.html';"></div>
+     </div>
+    </li>
+    <li>
+    <div id="home_3">
+		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">INNOVATIVE LEARNING SOLUTIONS</h1>
+		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">That are engaging and creative in their approach to Life Science Training</h2>
+		<div id="learnMore" onclick="location.href = 'demo.html';"></div>
+     </div>
+    </li>
+  </ul>
+ </div>
+<!--end image slider block-->
+
+</div>
+
+<!----- content ----->
+<div id="contentWrap" style="pointer-events:auto; position:relative; z-index:2;">
+    <div class="homeIntro">
+        <h2 class="introText">
+            A leader in healthcare communications and training since 1994, ERS partners with clients to provide content-driven programs to reach target audiences.  </h2>
+        <h2 class="introText">At ERS, we believe in consistency of messages across Training, Medical Communications, and Promotional Marketing, from product launch through the product life cycle.   </h2>
+        <h2 class="introText"><i>“Our goal is to provide a more cost-effective and time-efficient use of content and materials by bridging the gap between the training of sales and management and the education of healthcare providers, thus providing a higher level of consistency in communications across all stakeholders.” –Gregg Terry, President</i>
+        </h2>    
+    </div>
+    
+    <div class="ourServices">
+    	<img src="img/icon_ourServices.png">
+    </div>
+    
+    <div class="services">
+    			<div class="AreaL_wrap">
+                <div class="servicesAreaL">
+                    <div class="serviceCenter">
+                        <img class="servicesIcon" src="img/icon_lifeScience.png">
+                        <h4><b>LIFE SCIENCES TRAINING</b></h4><br>
+                        <h4 class="">Providing clients with a unique blend of extensive therapeutic knowledge, unmatched creativity, and account management expertise.
+                        </h4>  
+                        <div id="learnMore" onclick="location.href = 'training.html';"></div>
+                    </div>
+                </div>
+                </div>
+                <div class="AreaR_wrap">
+                <div class="servicesAreaR">
+                    <div class="serviceCenter">
+                        <img class="servicesIcon" src="img/icon_medEdu.png">
+                        <h4><b>MEDICAL COMMUNICATIONS</b></h4><br>
+                        <h4 class="">Offering a full range of educational programs and communication services that combine scientific proficiency, marketing savvy, and tactical excellence.
+                        </h4> 
+                        <div id="learnMore" onclick="location.href = 'medcom.html';"></div>
+                    </div>
+                </div>
+                </div>
+    </div>
+    
+    <div class="imageSection" id="advantage"><img src="img/home_ERSadvantage.png"></div>
+    <div class="imageSection2" id="clients">
+    	<img style="width:100%;" src="img/clients/clients_bg.png">
+    	
+    	<div class="flexslider flex2" style="width:100%; margin:auto; margin-top:-40%;">
+    	<ul class="slides" style="background-color:#328ac2;">
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_a.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_b.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_c.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_d.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_e.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_f.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_g.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_h.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_i.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_j.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_a.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_b.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_c.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_d.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_e.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_f.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_g.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_h.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_i.png"/></div>
+    		</li>
+    		<li>
+    			<div><img class="client_box" src="img/clients/clients_j.png"/></div>
+    		</li>
+    	</ul>
+	</div>
+    	
+    	<div id="learnMore" class="clientLink" onclick="location.href = 'ourclients.html';"></div> 	
+    </div>
+    
+    
+	<!--<div id="coverbox" style="z-index:15!important; pointer-events:none; opacity:.5; width:217px; position:absolute;"><img style="background-size:217px 146px; width:217px; height:146px;" src="img/clients/clients_box.png"/></div>-->
+
+	
+    <!--<div style="position:relative; width:189px; height:55px; margin-top:-130px; margin-left:auto; margin-right:auto; cursor:pointer;">
+    </div> -->
+    <div class="imageSection" id="quotes" style="margin:0; padding:0;  position:relative;">
+    	<!--<h3 class="introText" style="color:white; width:900px; font-size:25px; top:290px;">
+       		<i>“The ERS team has been a valuable partner during the launch of J&J's first Type 2 diabetes medication.
+       		I would recommend ERS to assist in achieving the goals and objectives of future launch initiatives.”</i>
+       		<br><br>-Todd Pierce, Janssen Pharmaceuticals, Inc.
+        </h3>  
+    	<img src="img/home_bg_quotes.png">-->
+    	<div class="flexslider flex1" style="margin: 0; background-color:gray;">
+ 		 	<ul class="slides">
+    		<li>
+     		<img  src="img/home_quotes-01.png">
+     		<!--<p>Slide 1</p>-->
+    		</li>
+   			 <li>
+      		<img src="img/home_quotes-02.png">
+      		<!--<p>Slide 2</p>-->
+    		</li>
+   			 <li>
+      		<img src="img/home_quotes-03.png">
+      		<!--<p>Slide 3</p>-->
+    		</li>
+  			</ul>
+		</div>
+    </div>
+    <div class="imageSection" id="forTheRecord" style="background-color:white;"><img src="img/home_Record.png"></div>
+
+<!--back to top button -->
+<div id="Up" class="backUp" onclick="$(function () {$('body,html').animate({scrollTop: 0}, 800);});"></div>
+</div>
+<!----- footer ----->
+<div class="footer">
+	<script>footer();</script>
+</div> 
+</body>
+</html>

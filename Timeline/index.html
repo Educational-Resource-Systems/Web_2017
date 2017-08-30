@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en"><!---->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+        <title>ERS Timeline</title>
+
+        <link rel="stylesheet" type="text/css" href="css/timeline-style.css">
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.connected-carousels.css">
+
+        <script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
+		<script type="text/javascript" src="js/fadeslideshow.js"></script>
+
+    </head>
+    <body>
+            
+        <div class="wrapper">
+            
+            <div class="connected-carousels">
+                <div class="stage">
+                    <div class="carousel carousel-stage">
+                        <ul>
+                        	<!-- 1 -->
+                            <li>
+
+                                <img src="img/img1.png" alt="">
+                                <video id="video1" width="586" height="360" preload="auto" poster="img/video1.png" controls>
+                                <!-- MP4 must be first for iPad! -->
+                                <source src="http://ers-dev.com/demos/video/ERS_TeaserMovie.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                                <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                                                                                        
+                                <!-- fallback to Flash: -->
+                                    <object width="586" height="360" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/ERS_TeaserMovie.mp4" />
+                                        <param name="flashvars" value="http://ers-dev.com/demos/video/ERS_TeaserMovie.mp4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video1.png" width="586" height="360"   
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                </video>
+
+                    		</li>
+                            
+                            <!-- 2 -->
+                            <li>          
+
+                                    <img src="img/img2.png" alt=""><!-- width="1024" height="493" -->
+                                    <div id="fadeshow1" ></div>
+
+                            </li>
+                            
+                            <!-- 3 -->
+                            <li>
+
+                                <a href="http://jdrf.org/" target="_blank"><div class="jdrf">
+                                <img src="img/blank.png" alt=""></div></a><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            
+                            <!-- 4 -->
+                            <li>
+
+                                <img src="img/img4.png" alt="hello"><!-- width="1024" height="493" -->
+                            
+                            </li>
+                            
+                            <!-- 5 -->
+                            <li>                            
+                            
+                                <img src="img/img5.png" alt=""><!-- width="1024" height="493" -->
+                                    <video id="video2" width="495" height="378" preload="none" poster="img/video5.png" controls>
+                                    <!-- MP4 must be first for iPad! -->
+                                    <source src="http://ers-dev.com/demos/video/HER2Movie2a.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                                    <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                                    
+                                    <!-- fallback to Flash: -->
+                                    <object width="495" height="378" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/HER2Movie2a.mp4" />
+                                        <param name="flashvars" value="http://ers-dev.com/demos/video/HER2Movie2a.mp4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video5.png" width="495" height="378"  
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                    </video>
+
+                            </li>
+                            
+                            <!-- 6 -->
+                            <li>
+
+                                <a href="links/J&J-ERS_RiskAssessment.pdf" target="_blank">
+                                <div class="johnson">
+                                <img src="img/blank.png" alt="" /></div></a><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            <!-- 7 -->
+                            <li>
+                                
+                                <img src="img/img7.png" alt=""><!-- width="1024" height="493" -->
+                                <div id="fadeshow2" ></div>
+                            </li>
+                            
+                            <!-- 8 -->
+                            <li>
+
+                                <img src="img/img8.png" alt=""><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            <!-- 9 -->
+                            <li>                            
+
+                                    <img src="img/img9.png" alt=""><!-- width="1024" height="493" -->
+                                    <video id="video4" width="660" height="372" preload="none" poster="img/video9.png" controls>
+                                    <!-- MP4 must be first for iPad! -->
+                                    <source src="http://ers-dev.com/demos/video/SPBT_Timeline_New.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                                    <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                                    
+                                    <!-- fallback to Flash: -->
+                                    <object width="660" height="372" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/SPBT_Timeline_New.mp4" />
+                                        <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video9.png" width="660" height="372" 
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                    </video>
+
+                            </li>
+                            
+                            <!-- 10 -->
+                            <li>
+
+                                    <img src="img/img10.png" alt=""><!-- width="1024" height="493" -->
+                                    <video id="video5" width="499" height="378" preload="none" poster="img/video10.png" controls><!---->
+                                    <!-- MP4 must be first for iPad! -->
+                                    <source src="http://ers-dev.com/demos/video/storylineDemo.mp4" /><!-- Safari / iOS video    -->
+                                  <!-- <source src="video/Storylinedemo.webm" type="video/webm" />
+                                    <source src="video/Storylinedemo.ogv" type="video/ogg" /> Firefox / Opera / Chrome10 -->
+                                    
+                                    <!-- fallback to Flash: -->
+                                    
+                                    <object width="499" height="378" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/storylineDemo.mp4" />
+                                        <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video10.png" width="499" height="378"  
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                    </video>
+
+                            </li>
+                            
+                            <!-- 11 -->
+                            <li>
+ 
+                                    <img src="img/img11.png" alt=""><!-- width="1024" height="493" -->
+                                    <video id="video6" width="523" height="378" preload="auto" poster="img/video11.png" controls>
+                                    <!-- MP4 must be first for iPad! -->
+                                    <source src="http://ers-dev.com/demos/video/EyeMovie.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                                    <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                                    
+                                    <!-- fallback to Flash: -->
+                                    <object width="523" height="378" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/EyeMovie.mp4" />
+                                        <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video11.png" width="523" height="378" 
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                    </video>
+
+                            </li>
+                            
+                            <!-- 12 -->
+                            <li>
+
+                                    <img src="img/img12.png" alt=""><!-- width="1024" height="493" -->
+                                    <video id="video7" width="651" height="372" preload="none" poster="img/video12.png" controls>
+                                    <!-- MP4 must be first for iPad! -->
+                                    <source src="http://ers-dev.com/demos/video/SerelaxinAR.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                                    <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                                    
+                                    <!-- fallback to Flash: -->
+                                    <object width="651" height="372" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                        <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                        <param name="movie" value="http://ers-dev.com/demos/video/SerelaxinAR.mp4" />
+                                        <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+                                        <!-- fallback image. note the title field below, put the title of the video there -->
+                                        <img src="img/video12.png" width="651" height="372" 
+                                         title="No video playback capabilities, please download the video below" />
+                                    </object>
+                                    </video>
+
+                            </li>
+                            
+                            <!-- 13 -->
+                            <li>
+
+                                <img src="img/img13.png" alt=""><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            <!-- 14 -->
+                            <li>
+
+                                <img src="img/img14.png" alt=""><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            <!-- 15 -->
+                            <li>
+
+                                <img src="img/img15.png" alt=""><!-- width="1024" height="493" -->
+
+                            </li>
+                            
+                            <!-- 16 -->
+                            <li>
+
+                            <img src="img/img16.png" alt=""><!-- width="1024" height="493" -->
+                            <video id="video8" width="592" height="384" preload="none" poster="img/video16.png" controls>
+                            <!-- MP4 must be first for iPad! -->
+                            <source src="http://ers-dev.com/demos/video/stelaramovie4.mp4" type="video/mp4" /><!-- Safari / iOS video    -->
+                            <!-- <source src="video/EyeMovie.ogv" type="video/ogg" />Firefox / Opera / Chrome10 -->
+                            
+                            <!-- fallback to Flash: -->
+                            <object width="592" height="384" type="application/x-shockwave-flash" data="__FLASH__.SWF">
+                                <!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->
+                                <param name="movie" value="http://ers-dev.com/demos/video/stelaramovie4.mp4" />
+                                <param name="flashvars" value="controlbar=over&amp;image=__POSTER__.JPG&amp;file=__VIDEO__.MP4" />
+                                <!-- fallback image. note the title field below, put the title of the video there -->
+                                <img src="img/video16.png" width="592" height="384" 
+                                 title="No video playback capabilities, please download the video below" />
+                            </object>
+							</video>
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <a href="#" class="prev prev-stage"><span onclick="Pause();"></span></a>
+                    <a href="#" class="next next-stage"><span onclick="Pause();"></span></a>
+                </div>
+
+                <div class="navigation">
+                    <a href="#" class="prev prev-navigation"></a>
+                    <a href="#" class="next next-navigation"></a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li onclick="Pause();" id="01"><img src="img/icon-01.png" width="97" height="110" alt=""></li><!-- 1994 -->
+                            <li onclick="Pause();" id="02"><img src="img/icon-02.png" width="97" height="110"  alt=""></li><!-- 1995 -->
+                            <li onclick="Pause();" id="03"><img src="img/icon-03.png" width="97" height="110"  alt=""></li><!-- 1999 -->
+                            <li onclick="Pause();" id="04"><img src="img/icon-04.png" width="97" height="110"  alt=""></li><!-- 2000 -->
+                            <li onclick="Pause();" id="05"><img src="img/icon-05.png" width="97" height="110"  alt=""></li><!-- 2004 -->
+                            <li onclick="Pause();" id="06"><img src="img/icon-06.png" width="97" height="110"  alt=""></li><!-- 2007 -->
+                            <li onclick="Pause();" id="07"><img src="img/icon-07.png" width="97" height="110"  alt=""></li><!-- 2007 -->
+                            <li onclick="Pause();" id="08"><img src="img/icon-08.png" width="97" height="110"  alt=""></li><!-- 2010 -->
+                            <li onclick="Pause();" id="09"><img src="img/icon-09.png" width="97" height="110"  alt=""></li><!-- 2011 -->
+                            <li onclick="Pause();" id="10"><img src="img/icon-10.png" width="97" height="110"  alt=""></li><!-- 2012 -->
+                            <li onclick="Pause();" id="11"><img src="img/icon-11.png" width="97" height="110"  alt=""></li><!-- 2013 -->
+                            <li onclick="Pause();" id="12"><img src="img/icon-12.png" width="97" height="110"  alt=""></li><!-- 2014 -->
+                            <li onclick="Pause();" id="13"><img src="img/icon-13.png" width="97" height="110"  alt=""></li><!-- 2015 -->
+                            <li onclick="Pause();" id="14"><img src="img/icon-14.png" width="97" height="110"  alt=""></li><!-- 2015 -->
+                            <li onclick="Pause();" id="15"><img src="img/icon-15.png" width="97" height="110"  alt=""></li><!-- 2016 -->
+                            <li onclick="Pause();" id="16"><img src="img/icon-16.png" width="97" height="110"  alt=""></li><!-- 2016 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        		<div class="timebar">
+                </div>
+
+    </body>
+
+	<script type="text/javascript">
+        
+        var mygallery1=new fadeSlideShow({
+            wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+            dimensions: [472, 360], //width/height of gallery in pixels. Should reflect dimensions of largest image
+            imagearray: [
+                ["img/slide0.png"],
+                ["img/slide1.png"],
+                ["img/slide2.png"],
+                ["img/slide3.jpg"],
+                ["img/slide4.png"],
+                ["img/slide5.jpg"],
+                ["img/slide6.png"] //<--no trailing comma after very last image element!
+            ],
+            displaymode: {type:'auto', pause:900, cycles:0, wraparound:false},
+            persist: false, //remember last viewed slide and recall within same session?
+            fadeduration: 500, //transition duration (milliseconds)
+            descreveal: "none",
+            togglerid: ""
+        });
+        
+        
+        var mygallery2=new fadeSlideShow({
+            wrapperid: "fadeshow2", //ID of blank DIV on page to house Slideshow
+            dimensions: [512, 380], //width/height of gallery in pixels. Should reflect dimensions of largest image
+            imagearray: [
+                ["img/MedComm1.png"],
+                ["img/MedComm2.png"],
+                ["img/MedComm3.png"],
+                ["img/MedComm4.png"],
+                ["img/MedComm5.png"] //<--no trailing comma after very last image element!
+            ],
+            displaymode: {type:'auto', pause:900, cycles:0, wraparound:false},
+            persist: false, //remember last viewed slide and recall within same session?
+            fadeduration: 500, //transition duration (milliseconds)
+            descreveal: "none",
+            togglerid: ""
+        });
+    </script>
+        
+    <script> 
+		var Video1=document.getElementById("video1"); 
+		var Video2=document.getElementById("video2"); 
+		var Video3=document.getElementById("video3"); 
+		var Video4=document.getElementById("video4"); 
+		var Video5=document.getElementById("video5"); 
+		var Video6=document.getElementById("video6"); 
+		var Video7=document.getElementById("video7"); 
+		var Video8=document.getElementById("video8");
+		
+		function Pause()
+		{
+		  Video1.pause();
+		  Video2.pause();
+		  Video3.pause();
+		  Video4.pause();
+		  Video5.pause();
+		  Video6.pause();
+		  Video7.pause();
+		  Video8.pause(); 
+		} 
+	</script>
+</html>

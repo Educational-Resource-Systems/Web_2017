@@ -1,0 +1,255 @@
+<!doctype html>
+<html class="">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=0">
+<title>ERS | Educational resource Systems Inc.</title>
+
+<link href="css/mobile_style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/mobile_accordion-style.css" type="text/css">
+<!--<link rel="stylesheet" href="../css/training_pages.css" type="text/css">-->
+<link rel="stylesheet" href="../css/jquery-ui.css" type="text/css">
+
+<script src="js/respond.min.js"></script>
+<script type="text/javascript" src="../js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<!--<script type="text/javascript" src="../js/classie.js"></script>-->
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/menus.js"></script>
+<script type="text/javascript" src="js/header_size.js"></script>
+
+</head>
+<body>
+
+<script>
+	$(window).load(function() { 
+    /* initialize header sizing script from header_size.js */
+    init();
+  });
+</script>
+
+
+<script>
+  $( function() {
+    var icons = {
+      header: "ui-icon-caret-1-s",
+      activeHeader: "ui-icon-caret-1-n"
+    };
+    $( ".accordion" ).accordion({
+      icons: icons
+    });
+  });
+</script>    
+
+<div class="imageSection" id="mainBlock"><img style="width:100%;" src="img/pages/training_header.png"></div>
+        
+<div id="menu" style="margin-top:-20px;">
+
+<ul class="accordion-menu" id="mini-menu" style="display:none;">
+	<li class="no-children" style="cursor:pointer;">
+		<a href ="mobile.html" style="font-size:16;">HOME</a>		
+    </li>
+	
+	<li class="has-children">
+		<input type="checkbox" name="group-1" id="group-1">
+		<label for="group-1">ABOUT</label>
+    	<ul>
+    		<li><a href="ourstory.html">Our Story</a></li>
+    		<li><a href="ourteam.html">Our Team</a></li>
+    		<li><a href="ourclients.html">Our Clients</a></li>
+    		<li><a href="areas.html">Therapeutic Areas</a></li>
+    	</ul>
+    </li>
+
+	<li class="has-children">
+		<input type="checkbox" name="group-2" id="group-2">
+		<label for="group-2">SERVICES</label>
+		<ul>
+    		<li><a href="training.html">Life Science Training</a></li>
+    		<li><a href="medcom.html">Medical Com</a></li>
+    	</ul>
+	</li>
+	
+	<li class="has-children">
+		<input type="checkbox" name="group-3" id="group-3">
+		<label for="group-3">CONTACT</label>
+		<ul>
+    		<li><a href="contact.php">Contact</a></li>
+    		<li><a href="careers.html">Careers</a></li>
+    	</ul>	
+    </li>
+    
+    <li class="no-children" style="cursor:pointer;">
+		<!--<input type="checkbox" name="group-4" id="group-4">
+		<label for="group-4">NEWS & VIEWS</label>-->
+		
+		<a href ="news.html" style="font-size:16;">NEWS &amp; VIEWS</a>	
+		
+    </li>
+</ul> <!-- accordion-menu -->
+</div>
+
+<div id="menuButton" onclick="miniMenu();">MENU</div>
+        
+<div class="subHeadText">
+	<h2>For over two decades, the Training division of ERS has been exceeding client expectations 
+	with its unique blend of extensive therapeutic knowledge, unmatched creativity, 
+	and account management expertise. Our training experts design learning experiences 
+	for all Sales Reps, Sales Management and Medical Science Liasions.</h2>
+</div>
+
+<!-- accordion list  -->
+<div id="accordionContainerMobile">   
+    
+<div class="accordion">
+<h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_curric.png"></span>CURRICULUM DEVELOPMENT</h3>
+
+<div>
+    <img src="../img/pages/training_CurriculumDevelopment.png">
+     		<ul id="mobileAccordion">
+                <li>Disease state training</li>
+                <li>Product-based training</li>
+                <li>Skills-based training</li>
+                <li>New hire training</li>
+                <li>Advanced training</li>
+                <li>Medical science liason training</li>
+                <li>Launch planning</li>
+                <li>Selling models</li>
+                <li>Strategy pull-through</li>
+            </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_workshop.png"></span>CUSTOMIZED WORKSHOP DESIGN</h3>
+  <div>
+    <img src="../img/pages/training_WorkshopDesign.png">
+            <ul id="mobileAccordion">
+                <li>Disease awareness launch</li>
+                <li>Product launch</li>
+                <li>POA – regional and district implementation</li>
+                <li>Broadcast scripts</li>
+                <li>Virtual workshops</li>
+                <li>Live clinician experiences/applications</li>
+                <li>Gamification</li>
+                <li>Compliance reporting</li>
+           </ul>
+  </div>
+    
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_visualize.png"></span>SCIENCE VISUALIZATION</h3>
+  <div>
+    <img src="../img/pages/training_ScienceVisual.png">
+            <ul id="mobileAccordion">
+                <li>Medical illustrations</li>
+                <li>2D animations</li>
+                <li>3D animations</li>
+                <li>MOAs and MODs </li>
+                <li>Motion graphics</li>
+                <li>Live-action video</li>
+                <li>Graphic design</li>
+           </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_data.png"></span>DATABASE CONTENT MANAGEMENT</h3>
+  <div>
+    <img src="../img/pages/training_DatabaseContentMgmt.png">
+            <ul id="mobileAccordion">
+                <li>Product- &amp; skills- based training</li>
+                <li>Intergration with LMS systems</li>
+                <li>Referencing systems</li>
+                <li class="listHolder">
+                        <div class="sublist">
+                            <ul>
+                                <li>Compass</li>
+                                <li>Connex</li>
+                                <li>EOS</li>
+                            </ul>
+                        </div>
+                        <div class="sublist">
+                            <ul>
+                                <li>Mercury</li>
+                                <li>Veeva Vault</li>
+                                <li>Zinc</li>
+                            </ul>
+                        </div>
+                </li>
+                <li>Dedicated staff for reference management</li>
+           </ul>
+  </div>
+
+  
+  <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_blended.png"></span>EXPERIENTIAL &amp; BLENDED LEARNING</h3>
+  <div>
+    <img src="../img/pages/training_Experiential_Blended.png">
+            <ul id="mobileAccordion">
+                <li>eLearning</li>
+                <li>Print modules</li>
+                <li>Gamification</li>
+                <li>Augmented and virtual reality</li>
+                <li>Medical slide decks</li>
+                <li>Websites and mobile apps </li>
+                <li>Flashcards and journeylines</li>
+                <li>Job aids</li>
+                <li>Strategy pull-through</li>
+            </ul>
+  </div>
+  
+  <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_eLearn.png"></span>eLEARNING</h3>
+  <div>
+    <img src="../img/pages/training_eLearning.png">
+            <ul id="mobileAccordion">
+                <li>Gamification</li>
+                <li>Augmented reality</li>
+                <li>Virtual reality</li>
+                <li>Articulate storyline</li>
+                <li>HTML5</li>
+                <li>eLearning escape rooms</li>
+                <li>Flashcards</li>
+                <li>Journeyline – visual disease and product story</li>
+            </ul>
+  </div>
+    
+<h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_sales.png"></span>SALES SIMULATIONS/CERTIFICATIONS</h3>
+
+  <div>
+    <img src="../img/pages/training_SalesSimulations.png">
+     		<ul id="mobileAccordion">
+                <li>Disease state, product, and selling skills</li>
+                <li>Logistic/meeting management</li>
+                <li>Customized rotation schedules</li>
+                <li>Customer recruitment and management</li>
+                <li>Competition</li>
+                <li>Theming</li>
+                <li>Compliance reporting</li>
+            </ul>
+  </div>
+  
+ <h3 class="accordion-title"><span class="icon"><img src="../img/pages/icon_strategy.png"></span>SALES FORCE CERTIFICATION</h3>
+  <div>
+    <img src="../img/pages/training_SalesforceCert.png">
+            <ul id="mobileAccordion">
+                <li>Selling environments</li>
+                <li>Recruitment/management logistics for 
+    “real physician” certification activities</li>
+                <li>Custom certification environment design</li>
+                <li>Precall planning</li>
+                <li>Pair/triad practice with peer feedback</li>
+                <li>Call practice (precertification)</li>
+                <li>Territory planning (post-certification)</li>
+                <li>Disease state pull-through</li>
+           </ul>
+  </div>
+    
+</div><!-- end accordion  -->
+</div>    <!-- end accordion container -->
+
+    
+
+<!----- footer ----->
+<div class="footer">
+    <script>footer();</script>
+</div> 
+</body>
+</html>
+
+
+

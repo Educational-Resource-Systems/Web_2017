@@ -1,0 +1,12 @@
+NOTES
+
+-'clean html' folder holds unaltered versions of the html in the menus.js file.
+The html in that file has an escape symbol at every line break so that it can be read properly by the javascript. 
+
+-'menus.js' has two menu setups- one standard for wider widths, and one for iPad portrait view.
+It checks at the start of the file for page width and uses that to choose.  
+
+-index.html has script in the header that reloads the page on orientation change. 
+There is also a check for screen width that determines footer sizing adjustments.
+
+-Footer code has also been added to menus.js so it can be loaded separately like the header.  

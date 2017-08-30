@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../img/AvenirLTStd-Book_4.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Webfont: Lato-Regular */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../img/Lato-Regular.woff') format('woff'),
+         url('../img/Lato-Regular.ttf') format('truetype'); 
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+/* Webfont: Lato-Bold */@font-face {
+    font-family: 'LatoWeb';
+    src: url('../img/Lato-Bold.woff') format('woff'), 
+         url('../img/Lato-Bold.ttf') format('truetype');
+    font-style: bold;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+#multiOpenAccordion {
+}
+.left-accordion {
+    width: 45%;
+    display: inline-block;
+    margin: 10px;
+    margin-left:5px;
+    vertical-align: top;
+border-bottom: 1px solid #999;    
+}
+.right-accordion {
+    width: 45%;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+border-bottom: 1px solid #999;    
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin: 2px 0 0 0;
+	padding: .2em .2em .5em 0;
+	font-size: 150%;
+    text-align: left;
+    color: #2A3544;
+border-top: 1px solid #999;
+}
+.accordion-title .ui-accordion .ui-accordion-header {
+}
+
+.ui-accordion .ui-state-active  {
+background-color: #E5E5E5; 
+border-bottom: 1px solid #999;     
+}
+.ui-accordion-header-collapsed {
+    background-color: #fff;   
+}
+/*.ui-accordion-content {
+border-bottom: 1px solid #999;
+}*/
+.ui-icon {
+    left: 90%;
+}
+.ui-icon,
+.ui-widget-content .ui-icon  {
+  background-image: url(../img/pages/icon-s.png) !important;
+  width: 30px !important;
+  height: 18px !important;
+}
+.ui-state-active .ui-icon,
+.ui-button:active .ui-icon {
+  background-image: url(../img/pages/icon-n.png) !important;
+  width: 30px !important;
+  height: 18px !important;
+}
+.accordion-menu {
+  display:none;
+  text-decoration:none;
+  font-family:  'Avenir', 'LatoWeb', sans-serif;
+  font-size: 16px;
+  width: 220px;
+  position:absolute;
+  float:right;
+  top:31px;
+  right:10px;
+  /*background: rgb(0,61,121);*/
+  background-color:white;
+  margin: 4em auto;
+  /*box-shadow: 0 4px 40px #70ac76;*/
+}
+.expand{
+display:block !important;
+}
+.accordion-menu ul {
+  /* by default hide all sub menus */
+  display: none;
+}
+.accordion-menu li {
+	list-style:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-children ul{
+ margin-left:-45px;
+}
+
+.accordion-menu input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+
+.accordion-menu label, .accordion-menu a {
+  position: relative;
+  text-decoration:none;
+  display: block;
+  padding: 15px 18px 15px 60px;
+  background-color:white;
+  /*background: rgb(0,61,121);*/
+  box-shadow: inset 0 -1px rgba(255,255,255,.2);
+  color: black;
+  left:-20px;
+}
+.no-touch .accordion-menu label:hover, .no-touch .accordion-menu a:hover {
+  background: #52565d;
+}
+.accordion-menu label::before, .accordion-menu label::after, .accordion-menu a::after {
+  /* icons */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.accordion-menu label {
+  cursor: pointer;
+}
+.accordion-menu label::before, .accordion-menu label::after {
+  background-image: url(../img/cd-icons.svg);
+  background-repeat: no-repeat;
+}
+.accordion-menu label::before {
+  /* arrow icon */
+  left: 18px;
+  background-position: 0 0;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+.accordion-menu label::after {
+  /* folder icons */
+  left: 41px;
+  background-position: -16px 0;
+}
+.accordion-menu a::after {
+  /* image icon */
+  left: 36px;
+  background: url(../img/cd-icons.svg) no-repeat -48px 0;
+}
+.accordion-menu input[type=checkbox]:checked + label::before {
+  /* rotate arrow */
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.accordion-menu input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  background-position: -32px 0;
+}
+.accordion-menu input[type=checkbox]:checked + label + ul,
+.accordion-menu input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+
+.accordion-menu.animated label::before {
+  /* this class is used if you're using jquery to animate the accordion */
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/***  MedCom and Life Science styles    */
+
+span.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.accordion-title{
+	font-size:1.4em;
+	padding-top:.6em;
+	min-width:480px;
+}
+
+@media only screen and (max-width: 769px) { 
+.left-accordion {
+    width: 80%; 
+}
+.right-accordion {
+    width: 80%;   
+}
+}
