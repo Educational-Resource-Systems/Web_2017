@@ -12,6 +12,7 @@
 <link href="css/grid.css" rel="stylesheet" type="text/css">
 <link href="css/flexslider.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/accordion-style.css" type="text/css">
+<link rel="stylesheet" href="css/custom.css" type="text/css">
 
 <script src="js/respond.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
@@ -36,7 +37,7 @@
 <style> #header{background-color:rgba(0,0,0,0); box-shadow: 0px 3px 5px rgba(50, 50, 50, 0);} #header.smaller{background-color:rgba(0,0,0,.65); box-shadow: 0px 3px 5px rgba(50, 50, 50, .1);}</style>
 </head>
 <body>
-<header id="header" style="min-width:1024px;">
+<header id="header" class="non-mobile">
 <div id="logo" onclick="location.href = 'index.html';"><a href=""></a></div>
 
 <div id="header_menu">
@@ -44,9 +45,9 @@
 
 <!--<script>insertMenu();</script>-->
 
-<div id="menu1" style="display:block;"><script>menuMain();</script></div>
+<div id="menu1"><script>menuMain();</script></div>
 
-<div id="menu2" style="display:none;"><script>menuHam();</script></div>
+<div id="menu2"><script>menuHam();</script></div>
 
 
 </div><!--end header menu-->
@@ -54,11 +55,65 @@
 </header>
 
 <!----- content ----->
-    <div id="heading" class="imageSection" style="width:100%;
+    <div id="heading" class="imageSection non-mobile" style="width:100%;
 	background-image: url(img/pages/ourClients_main.png);">
 		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Our Clients</h1>
 		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">We take pride in our long-term client relationships!</h2>
     </div>
+	
+<!--Mobile menu begin-->
+<div class="mobile-only">
+	<img style="width: 100%;" src="mobile/img/pages/ourClients_main.png">
+</div>
+
+<div class="mobile-only">
+
+<div id="menu">
+
+<div class="accordion-menu2" id="mini-menu" style="display:none;">
+	<div class="no-children" style="cursor:pointer;">
+		<a href ="mobile.html" style="font-size:16; color:gray;">HOME</a>		
+    </div>
+	<div class="has-children">
+		<label for="group-1">ABOUT</label>
+    	<div>
+    		<a href="ourstory.html"><div>Our Story</div></a>
+    		<a href="ourteam.html"><div>Our Team</div></a>
+    		<a href="ourclients.html"><div>Our Clients</div></a>
+    		<a href="areas.html"><div>Therapeutic Areas</div></a>
+    	</div>
+    </div>
+
+	<div class="has-children">
+		<label for="group-2">SERVICES</label>
+		<div>
+    		<a href="training.html"><div>Life Science Training</div></a>
+    		<a href="medcom.html"><div>Medical Com</div></a>
+    	</div>
+	</div>
+	
+	<div class="has-children">
+		<label for="group-3">CONTACT</label>
+		<div>
+    		<a href="contact.php"><div>Contact</div></a>
+    		<a href="careers.html"><div>Careers</div></a>
+    	</div>	
+    </div>
+    
+    <div class="no-children" style="cursor:pointer;">
+		<!--<label for="group-4">NEWS & VIEWS</label>-->
+		
+		<a href ="news.html" style="font-size:16;">NEWS & VIEWS</a>	
+		
+    </div>
+</div> <!-- accordion-menu -->
+</div>
+
+<div id="mobile-menu">
+	<div id="menu_text">Menu</div>
+</div>
+</div>
+<!--Mobile menu end-->
     
         <div class="subHeadText">
             <h2>Since 1994, ERS has enjoyed successful professional relationships with a number of leading pharmaceutical and biotech clients across the industry. The list of our clients represents a cross-section of small, medium, and large companies with leading brands in a variety of national and international markets.</h2>

@@ -141,14 +141,43 @@ document.write('\
                     <div><a target="_blank" href="https://goo.gl/maps/QDHETZKE1nG2">The Galleria at 2 Bridge Ave, #623<br />\
                     Red Bank, New Jersey 07701</a></div></div></div>\
             </div>\
-            <div id="copyright" style="min-width:768px;">\
+			<div class="social_media2">\
+				<div><a href="https://www.linkedin.com/company/educational-resource-systems-inc."><img src="img/btn/btn_linkedIn.png"></a></div>\
+				<div><a href=""><img src="img/btn/btn_twitter.png"></a></div>\
+				<!--<div><a href=""><img src="img/btn/btn_facebook.png"></a></div>-->\
+			</div>\
+            <div id="copyright">\
                 <p>&copy; \
                     <script language="javascript" type="text/javascript">\
                     var today = new Date();\
                     var year = today.getFullYear();\
                     document.write(year);\
                     </script> \
-                    Educational Resource Systems. All Rights Reserved. </p>\
+                    Educational Resource Systems. All&nbsp;Rights&nbsp;Reserved. </p>\
             </div>\
 ');
 }
+
+$( document ).ready(function() {
+	$("#mobile-menu").click(function(){
+		if ($('#mini-menu').css('display') == 'block'){
+			$("#mini-menu").hide();
+			$("#menu_text").html("Menu");
+		}
+		else{
+			$("#mini-menu").show();
+			$("#menu_text").html("close");
+		}
+	});
+	
+	$(".has-children").click(function(){
+		if ($(this).children('div').css('display') == 'block'){
+			$(this).children('div').hide();
+			$(this).children('label').removeClass('open');
+		}
+		else{
+			$(this).children('div').show();
+			$(this).children('label').addClass('open');
+		}
+	});
+});

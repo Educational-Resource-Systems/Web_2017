@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/accordion-style.css" type="text/css">
 <link rel="stylesheet" href="css/training_pages.css" type="text/css">
 <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="css/custom.css" type="text/css">
 
 
 <script src="js/respond.min.js"></script>
@@ -42,7 +43,7 @@
 <style> #header{background-color:rgba(0,0,0,0); box-shadow: 0px 3px 5px rgba(50, 50, 50, 0);} #header.smaller{background-color:rgba(0,0,0,.65); box-shadow: 0px 3px 5px rgba(50, 50, 50, .1);}</style>
 </head>
 <body>
-<header id="header">
+<header id="header" class="non-mobile">
 <div id="logo" onclick="location.href = 'index.html';"><a href=""></a></div>
 
 <div id="header_menu">
@@ -50,9 +51,9 @@
 
 <!--<script>insertMenu();</script>-->
 
-<div id="menu1" style="display:block;"><script>menuMain();</script></div>
+<div id="menu1"><script>menuMain();</script></div>
 
-<div id="menu2" style="display:none;"><script>menuHam();</script></div>
+<div id="menu2"><script>menuHam();</script></div>
 
 
 </div><!--end header menu-->
@@ -60,11 +61,65 @@
 </header>
 
 <!----- content ----->
-    <div id="heading" class="imageSection" style="width:100%;
+    <div id="heading" class="imageSection non-mobile" style="width:100%;
 	background-image: url(img/pages/medCom_header.png);">
 		<h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Medical Communications</h1>
 		<h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,.5);">Full range of educational programs & communication services</h2>
     </div>
+	
+<!--Mobile menu begin-->
+<div class="mobile-only">
+	<img style="width: 100%;" src="mobile/img/pages/medCom_header.png">
+</div>
+
+<div class="mobile-only">
+
+<div id="menu">
+
+<div class="accordion-menu2" id="mini-menu" style="display:none;">
+	<div class="no-children" style="cursor:pointer;">
+		<a href ="mobile.html" style="font-size:16; color:gray;">HOME</a>		
+    </div>
+	<div class="has-children">
+		<label for="group-1">ABOUT</label>
+    	<div>
+    		<a href="ourstory.html"><div>Our Story</div></a>
+    		<a href="ourteam.html"><div>Our Team</div></a>
+    		<a href="ourclients.html"><div>Our Clients</div></a>
+    		<a href="areas.html"><div>Therapeutic Areas</div></a>
+    	</div>
+    </div>
+
+	<div class="has-children">
+		<label for="group-2">SERVICES</label>
+		<div>
+    		<a href="training.html"><div>Life Science Training</div></a>
+    		<a href="medcom.html"><div>Medical Com</div></a>
+    	</div>
+	</div>
+	
+	<div class="has-children">
+		<label for="group-3">CONTACT</label>
+		<div>
+    		<a href="contact.php"><div>Contact</div></a>
+    		<a href="careers.html"><div>Careers</div></a>
+    	</div>	
+    </div>
+    
+    <div class="no-children" style="cursor:pointer;">
+		<!--<label for="group-4">NEWS & VIEWS</label>-->
+		
+		<a href ="news.html" style="font-size:16;">NEWS & VIEWS</a>	
+		
+    </div>
+</div> <!-- accordion-menu -->
+</div>
+
+<div id="mobile-menu">
+	<div id="menu_text">Menu</div>
+</div>
+</div>
+<!--Mobile menu end-->
     
     <div id="text-box" style="max-width:980px; margin:auto; margin-top:20px; padding:40px;">
 		<h2 style="color:black; font-size:2.1em; text-shadow: 2px 2px 4px rgba(0,0,0,0);">
@@ -76,7 +131,7 @@
 
 <div class="left-accordion">
 <div id="multiOpenAccordion">
-<h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_content.png"></span>CONTENT DEVELOPMENT</h3>
+<h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_content.png"></span><span class="accordion-text">CONTENT DEVELOPMENT</span></h3>
 <div>
     <img src="img/pages/medcom_ContentDev.png">
      		<ul id="">
@@ -91,7 +146,7 @@
             </ul>
   </div>
   
- <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_KOL.png"></span>KOL ID, STRATEGY, AND ENGAGEMENT</h3>
+ <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_KOL.png"></span><span class="accordion-text">KOL ID, STRATEGY, AND ENGAGEMENT</span></h3>
   <div>
     <img src="img/pages/medcom_KOL_ID.png">
             <ul id="">
@@ -106,7 +161,7 @@
            </ul>
   </div>
     
- <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_speaker.png"></span>SPEAKER TRAINING</h3>
+ <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_speaker.png"></span><span class="accordion-text">SPEAKER TRAINING</span></h3>
   <div>
     <img src="img/pages/medcom_SpeakerTraining.png">
             <ul id="">
@@ -123,7 +178,7 @@
            </ul>
   </div>
   
- <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_advocacy.png"></span>ADVOCACY DEVELOPMENT</h3>
+ <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_advocacy.png"></span><span class="accordion-text">ADVOCACY DEVELOPMENT</span></h3>
   <div>
     <img src="img/pages/medcom_AdvocacyDev.png">
             <ul id="">
@@ -148,7 +203,7 @@
 
 <div class="right-accordion">
 	<div id="multiOpenAccordion2">
-  <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_planning.png"></span>PUBLICATION PLANNING AND EXECUTION</h3>
+  <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_planning.png"></span><span class="accordion-text">PUBLICATION PLANNING AND EXECUTION</span></h3>
   <div>
     <img src="img/pages/medcom_PubPlanning.png">
             <ul id="">
@@ -168,7 +223,7 @@
             </ul>
   </div>
   
-  <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_meetings.png"></span>MEETINGS AND EVENTS</h3>
+  <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_meetings.png"></span><span class="accordion-text">MEETINGS AND EVENTS</span></h3>
   <div>
     <img src="img/pages/medcom_Meetings_Events.png">
       <div class="twoCollist">
@@ -206,7 +261,7 @@
   </div>
     
     
-<h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_education.png"></span>PATIENT EDUCATION</h3>
+<h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_education.png"></span><span class="accordion-text">PATIENT EDUCATION</span></h3>
 
   <div>
     <img src="img/pages/medcom_PatientEducation.png">
@@ -218,7 +273,7 @@
             </ul>
   </div>
   
- <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_messaging.png"></span>SCIENTIFIC MESSAGE PLATFORMS</h3>
+ <h3 class="accordion-title"><span class="icon"><img src="img/pages/icon_messaging.png"></span><span class="accordion-text">SCIENTIFIC MESSAGE PLATFORMS</span></h3>
   <div>
     <img src="img/pages/medcom_Gap.png">
             <ul id="">

@@ -1,0 +1,331 @@
+#footerButton > div > div, #footerButton > div > a > div > div {
+        display: inline-block;
+		vertical-align: middle;
+    }
+	#quotes, #client{
+		min-width: 768px;
+	}
+	.homeIntro{
+		padding-bottom: 50px;
+	}
+	
+	.backUp{
+		z-index:99;
+	}
+	.mobile-only{
+		display: none;
+	}
+	
+	#header{
+		min-width: 1024px;
+	}
+	#menu1{
+		display: block;
+	}
+	#menu2{
+		display: none;
+	}
+	.social_media2{
+		display: none;
+	}
+	#copyright{
+		min-width: 768px;
+	}
+	.bg-white{
+		background-color: #FFFFFF;
+	}
+	#mobile-imageSection > img{
+		width: 100%;
+	}
+	#menuButton {
+		height: 30px;
+		margin-top: -20px;
+		width: 100%;
+		color: black;
+		font-size: 1em;
+		text-align: center;
+		font-family: 'Avenir', 'LatoWeb', sans-serif;
+		z-index: 500;
+		padding-top: 8px;
+		box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+		margin-top: 1px;
+		cursor: pointer;
+	}
+	
+	.has-children > div{
+		display: none;
+	}
+	
+	.has-children > div > a > div{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+	}
+	
+	#menu a{
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	.left-accordion{
+		margin-left: 65px;
+	}
+	
+	#mobile-menu{
+		height: 50px;
+	}
+	
+	.accordion-title{
+		font-size: 1.4em;
+		min-width: 480px;
+	}
+
+@media only screen and (min-width: 1051px) {
+	#footerButton {
+		margin:30px 50px 10px 80px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	#menu1{
+		display: none;
+	}
+	#menu2{
+		display: block;
+	}
+    #footerGroup {
+        width: 100%;
+    }
+	#footerButton{
+		width: 33%;
+	}
+	.footer{
+		height: auto;
+		padding-bottom: 10px;
+	}
+	#footerButton > div {
+		width: 100%;
+    }
+	.notlast_footerButton > div{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#header{
+		min-width: 100%;
+	}
+	.left-accordion{
+		margin-left: 25px;
+	}
+	.accordion-title{
+		font-size: 1.2em;
+		min-width: 430px;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	ul.careerList{
+		margin-bottom: 12px;
+		margin-left: 100px;
+	}
+}
+
+@media only screen and (max-width: 930px) {
+	.left-accordion, .right-accordion {
+		width: 100%;
+	}
+	.accordion-title{
+		min-width: 100%;
+	}
+	.left-accordion, .right-accordion{
+		margin-left: 0;
+	}
+	.ui-accordion .ui-accordion-header{
+		font-size: 100%;
+	}
+}
+
+@media only screen and (min-width:780px) and (max-width: 900px) {
+	.contactForm{
+		width: 100%;
+		margin-left: 50px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#footerButton{
+		width: 100%;
+		margin-left: 33%;
+		margin-right: 33%;
+	}
+	.notlast_footerButton > div{
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#footerButton{
+		width: 100%;
+		margin-left: 33%;
+		margin-right: 33%;
+	}
+	.notlast_footerButton > div{
+		text-align: left;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#quotes, .services, #advantage, .homeIntro, #clients > img, #copyright, #header_art, .flex-active-slide > div, #heading{
+		min-width: 100%;
+	}
+	#header_art{
+		position: inherit;
+	}
+	#clients{
+		background-color: #0089BE;
+		padding-bottom: 20px;
+	}
+	#learnMore.clientLink{
+		margin-bottom: 0;
+	}
+	.AreaL_wrap, .AreaR_wrap{
+		width: 100%;
+	}
+	.flexslider, .homeIntro{
+		margin: 0;
+	}
+	#quotes_about, #block{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	#social_media, #quotes, #clients{
+		display: none;
+	}
+	.social_media2, #footerButton{
+		display: block;
+		margin-left: 20%;
+	}
+	.social_media2 > div{
+		width: 30%;
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#forTheRecord{
+		background-attachment: inherit;
+	}
+	.homeIntro{
+		margin-top: 0;
+		background-image: none;
+	}
+	.mobile-only{
+		display: block;
+	}
+	.non-mobile{
+		display: none;
+	}
+	.has-children{
+		cursor:pointer;
+	}
+	#mobile-menu{
+		box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+		padding-top: 20px;
+		padding-bottom: 20px;
+		cursor: pointer;
+	}
+	.accordion-menu2, #mobile-menu{
+		text-align: center;
+		font-size: 16px;
+	}
+	
+	#mini-menu > div {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	
+	.accordion-menu2 label::after {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		left: 18px;
+		background-position: 0 0;
+		-webkit-transform: translateY(-50%) rotate(-90deg);
+		-moz-transform: translateY(-50%) rotate(-90deg);
+		-ms-transform: translateY(-50%) rotate(-90deg);
+		-o-transform: translateY(-50%) rotate(-90deg);
+		-o-transform: translateY(-50%) rotate(-90deg);
+		transform: translateY(-50%) rotate(-90deg);
+		background-image: url('../img/cd-icons.svg');
+		margin-top: 8px;
+	}
+	.accordion-menu2 label.open::after {
+		-webkit-transform: translateY(0) rotate(0);
+		-moz-transform: translateY(0) rotate(0);
+		-ms-transform: translateY(0) rotate(0);
+		-o-transform: translateY(0) rotate(0);
+		-o-transform: translateY(0) rotate(0);
+		transform: translateY(0) rotate(0);
+		margin-top: 0;
+	}
+	.icon img {
+		float: left;
+		width: 25px;
+		height: 25px;
+		margin-right: 2px;
+	}
+	span.icon {
+		width: 25px;
+		height: 25px;
+		margin-right: -30px;
+	}
+	.ui-accordion .ui-accordion-header{
+		padding: 1em 3em 1em 0;
+	}
+	
+}
+
+@media only screen and (max-width: 500px) {
+	#footerButton{
+		width: 100%;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#footerButton{
+		margin-left: 5%;
+	}
+	.social_media2{
+		display: block;
+		margin-left: 5%;
+	}
+	.contactBlock, .contactForm input, .contactForm textarea, #map{
+		width: 100%;
+	}
+	#map{
+		margin-left: 0;
+	}
+	.contactForm{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.services h4{
+		width: 100%;
+		font-size: 15px;
+	}
+	#copyright{
+		margin-bottom: 10px;
+	}
+}
