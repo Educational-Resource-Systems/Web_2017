@@ -70,18 +70,18 @@ font-family: 'Avenir', 'LatoWeb', sans-serif;
 }
 #home_1 h1 {
 	position: relative;
-	top: 190px;
+	top: 140px;
 	margin: 0 auto;
     font-weight: bold;
 }
 #home_1 h2 {
 	position: relative;
-	top: 202px;
+	top: 146px;
 	margin: 0 auto;
 }
 #home_1 #learnMore { 
 	position: relative;
-	top: 256px;
+	top: 180px;
 	margin: 0  auto; 
 }
 #home_2 {
@@ -145,7 +145,7 @@ font-family: 'Avenir', 'LatoWeb', sans-serif;
 }
 #home_3 #learnMore { 
 	position: relative;
-	top: 225px;
+	top: 180px;
 	margin: 0  auto; 
 }
 		
@@ -572,7 +572,7 @@ article.tabs section:target ~ section:last-child img {
 	}
 	#home_1 h1, #home_1 h2, #home_2 h1, #home_2 h2, #home_3 h1, #home_3 h2{max-width:500px;}
 	#home_1 #learnMore{
-		top:220px;
+		top:165px;
 	}
 	#home_3 #learnMore{
 		top:165px;

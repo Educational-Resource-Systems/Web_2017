@@ -83,6 +83,10 @@
 	#text-box > h2, .subHeadText h2 {
 		font-size: 2.1em;
 	}
+	.ui-accordion .ui-accordion-header{
+		font-size: 110%;
+	}
+	
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
@@ -133,6 +137,9 @@
 		margin-bottom: 12px;
 		margin-left: 100px;
 	}
+	.ui-accordion .ui-accordion-header{
+		font-size: 100%;
+	}
 }
 
 @media only screen and (max-width: 930px) {
@@ -144,9 +151,6 @@
 	}
 	.left-accordion, .right-accordion{
 		margin-left: 0;
-	}
-	.ui-accordion .ui-accordion-header{
-		font-size: 100%;
 	}
 }
 
@@ -180,8 +184,11 @@
 }
 
 @media only screen and (max-width: 768px) {
-	#quotes, .services, #advantage, .homeIntro, #clients > img, #copyright, #header_art, .flex-active-slide > div, #heading{
-		min-width: 100%;
+	#quotes, .services, #advantage, .homeIntro, #clients > img, #copyright, #header_art, .flex-active-slide > div, #heading, .flexslider > ul > li > div{
+		min-width: 100% !important;
+	}
+	#home_2 img.LTEN_home{
+		width: 100%;
 	}
 	#header_art{
 		position: inherit;
