@@ -79,6 +79,10 @@
 		font-size: 1.4em;
 		min-width: 480px;
 	}
+	
+	#text-box > h2, .subHeadText h2 {
+		font-size: 2.1em;
+	}
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
@@ -285,8 +289,45 @@
 	}
 	.ui-accordion .ui-accordion-header{
 		padding: 1em 3em 1em 0;
+		font-size: 90%;
 	}
-	
+	ul, ol{
+		padding: 0;
+	}
+	.ui-helper-reset{
+		font-size: 120%;
+	}
+	div.twoCollistRight, div.twoCollist{
+		width: 100%;
+	}
+	#text-box > h2, .subHeadText h2 {
+		font-size: 1.2em;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	ul.careerList {
+		margin-left: 30px;
+	}
+	.introText {
+		font-size: 1.2em;
+	}
+	.ui-helper-reset{
+		font-size: 15px;
+	}
+	.sublist li::before{
+		margin-left: 0.5em;
+	}
+	.sublist2 li::before{
+		margin-left: 0.5em;
+		width: 1em;
+	}
+	#text-box > h2, .subHeadText h2{
+		font-size: 1em;
+	}
+	#text-box > h2, .subHeadText h2 {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 @media only screen and (max-width: 500px) {
