@@ -5,6 +5,59 @@
 	#quotes, #client{
 		min-width: 768px;
 	}
+	 #newsMain{
+		width: 768px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	 }
+	
+	#newsMain{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#newsMain:after{
+		clear: both;
+		content: '';
+		display: block;
+	}
+	
+	#newsMain > div{
+		width: 50%;
+		float: left;
+		padding-right: 30px;
+		padding-bottom: 40px;
+	}
+	
+	#newsMain > div > div{
+		padding-right: 30px;
+	}
+	
+	#newsMain > div > div  h2{
+		color: #000;
+		text-align: left;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	
+	.tag_section span:not(:last-child)::after{
+		content: "|";
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+	
+	.tag_section{
+		padding-bottom: 5px;
+	}
+	
+	.tag_section a{
+		color: #000;
+	}
+	
+	#newsMain > div > div  a{
+		text-decoration: none;
+	}
+	
 	.homeIntro{
 		padding-bottom: 50px;
 	}
@@ -92,6 +145,7 @@
 	}
 	.twoCollistRight > ul{
 		padding-left: 20px;
+	}
 	
 	.clientList, .areasList{
 		padding-top: 25px;
@@ -239,6 +293,17 @@
 @media only screen and (max-width: 768px) {
 	#quotes, .services, #advantage, .homeIntro, #clients > img, #copyright, #header_art, .flex-active-slide > div, #heading, .flexslider > ul > li > div{
 		min-width: 100% !important;
+	}
+	#newsMain{
+		width: 100%;
+	}
+	#newsMain > div{
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#newsMain > div > div{
+		padding-right: 0px;
 	}
 	#home_2 img.LTEN_home{
 		width: 100%;
