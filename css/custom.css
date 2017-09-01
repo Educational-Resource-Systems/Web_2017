@@ -87,6 +87,59 @@
 		font-size: 110%;
 	}
 	
+	.twoCollist > ul{
+		padding-left: 0;
+	}
+	.twoCollistRight > ul{
+		padding-left: 20px;
+	
+	.clientList, .areasList{
+		padding-top: 25px;
+		padding-bottom: 25px;
+		border-top: 1px solid rgba(0,0,0,.3);
+	}
+	
+	.clientList > ul{
+		list-style: none;
+		font-size: .95em;
+		width: 40%;
+		margin: auto;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 8%;
+	}
+	
+	.areasList > ul{
+		font-size: 0.85em;
+		width: 44%;
+		margin: auto;
+		margin-left: auto;
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 5%;
+		margin-bottom: 10px;
+	}
+	
+	.areasList > ul > li > ul{
+		list-style: none;
+	}
+	
+	.areasList > ul > li > ul > li {
+		text-indent: -7px;
+		margin-left: 7px;
+	}
+	
+	.areasList > ul > li > ul > li::before{
+		content: "-";
+	}
+	
+	.rightList{
+		float: right;
+	}
+	
+	.clientList > ul > li{
+		margin-bottom: 10px;
+	}
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
