@@ -354,7 +354,7 @@
 		display: block;
 	}
 	.non-mobile{
-		display: none;
+		display: none !important;
 	}
 	.has-children{
 		cursor:pointer;
