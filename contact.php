@@ -126,7 +126,8 @@
 </div>
 <!--Mobile menu end-->
     
-    <div class="imageSection" id="mainBlock"> <img style="width:100%;" src="img/pages/contact_title.png"></div>
+	<div id="titleLine"></div><div class="titleBox" style="margin-top: -26px;"><p>CONTACT US!</p></div>
+    <!--<div class="imageSection" id="mainBlock"> <img style="width:100%;" src="img/pages/contact_title.png"></div>-->
     
     <div class="contactBlock">
     <div class="contactForm">
