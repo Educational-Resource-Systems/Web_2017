@@ -186,10 +186,6 @@
 		content: "-";
 	}
 	
-	.rightList{
-		float: right;
-	}
-	
 	.clientList > ul > li{
 		margin-bottom: 10px;
 	}
