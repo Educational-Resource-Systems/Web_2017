@@ -284,16 +284,9 @@
 	.notlast_footerButton > div{
 		text-align: left;
 	}
-}
-
-@media only screen and (max-width: 800px) {
-	#footerButton{
+	#videoholder{
 		width: 100%;
-		margin-left: 33%;
-		margin-right: 33%;
-	}
-	.notlast_footerButton > div{
-		text-align: left;
+		margin-top: 0px;
 	}
 }
 
