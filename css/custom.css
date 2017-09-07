@@ -206,6 +206,22 @@
 		padding-top: 9px;
 		padding-left: 16px;
 	}
+	
+	#newsContent{
+		width: 768px;
+		margin: 20px auto;
+	}
+	
+	#newsContent  h1{
+		color: #000;
+		font-size: 2em;
+		text-align: left;
+	}
+	
+	#newsContent  p{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
@@ -307,10 +323,10 @@
 	#quotes, .services, #advantage, .homeIntro, #clients > img, #copyright, #header_art, .flex-active-slide > div, #heading, .flexslider > ul > li > div{
 		min-width: 100% !important;
 	}
-	#newsMain{
+	#newsMain, #newsContent{
 		width: 100%;
 	}
-	#newsMain > div{
+	#newsMain > div, #newsContent > div{
 		width: 100%;
 		padding-left: 20px;
 		padding-right: 20px;
