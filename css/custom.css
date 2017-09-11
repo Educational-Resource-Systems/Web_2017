@@ -207,6 +207,11 @@
 		padding-left: 16px;
 	}
 	
+	#returnBtn{
+		padding-left: 0px;
+		text-align: center;
+	}
+	
 	#newsContent{
 		width: 768px;
 		margin: 20px auto;
@@ -221,6 +226,42 @@
 	#newsContent  p{
 		margin-top: 10px;
 		margin-bottom: 10px;
+	}
+	
+	.learnMoreBox{
+		width: 189px;
+		height: 55px;
+		background-color: rgba(255,255,255,0.2);
+		border: solid 1px #fff;
+	}
+	
+	.learnMoreBox > p{
+		padding-top: 17px;
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+	}
+	
+	#home_1 #learnMore2 {
+		position: relative;
+		top: 180px;
+		margin: 0 auto;
+	}
+	
+	#home_2 #learnMore2 {
+		position: relative;
+		top: 180px;
+		margin: 0 auto;
+	}
+	
+	#home_3 #learnMore2 {
+		position: relative;
+		top: 180px;
+		margin: 0 auto;
+	}
+
+	.noUnderline{
+		text-decoration: none;
 	}
 
 @media only screen and (min-width: 1051px) {
