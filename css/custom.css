@@ -1,4 +1,4 @@
-#footerButton > div > div, #footerButton > div > a > div > div {
+#footerButton > div > div, #footerButton > div > div > a > div {
         display: inline-block;
 		vertical-align: middle;
     }
@@ -150,6 +150,10 @@
 	.clientList, .areasList{
 		padding-top: 80px;
 		padding-bottom: 25px;
+	}
+	
+	.areasList{
+		margin-left: 5px;
 	}
 	
 	.clientList > ul{
