@@ -275,6 +275,11 @@
 	.noUnderline{
 		text-decoration: none;
 	}
+	
+	.accordion-text{
+		display: inline;
+		vertical-align: sub;
+	}
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
