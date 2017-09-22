@@ -288,12 +288,6 @@
 }
 
 @media only screen and (max-width: 1050px) {
-	#footerButton {
-		padding-top: 30px;
-		padding-bottom: 10px;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
 	#menu1{
 		display: none;
 	}
@@ -370,19 +364,12 @@
 
 @media only screen and (max-width: 800px) {
 	#footerButton{
-		width: 55%;
-		margin-left: auto;
-		margin-right: auto;
-		float: none;
+		width: 100%;
+		margin-left: 33%;
+		margin-right: 33%;
 	}
-	#footerButton > div{
-		text-align: center;
-	}
-	#emailIcon{
-		padding-right: 40px;
-	}
-	#phoneIcon{
-		padding-right: 140px;
+	.notlast_footerButton > div{
+		text-align: left;
 	}
 	#videoholder{
 		width: 100%;
@@ -426,18 +413,6 @@
 	}
 	#quotes_about, #block{
 		display: none;
-	}
-}
-
-@media only screen and (max-width: 580px) {
-	#emailIcon{
-		padding-right: 0;
-	}
-	#phoneIcon{
-		padding-right: 0;
-	}
-	#footerButton > div{
-		text-align: left;
 	}
 }
 
@@ -576,6 +551,13 @@
 }
 
 @media only screen and (max-width: 400px) {
+	#footerButton{
+		margin-left: 5%;
+	}
+	.social_media2{
+		display: block;
+		margin-left: 5%;
+	}
 	.contactBlock, .contactForm input, .contactForm textarea, #map{
 		width: 100%;
 	}
@@ -588,16 +570,6 @@
 		padding-left: 5px;
 		padding-right: 5px;
 		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 360px) {
-	#footerButton{
-		margin-left: 5%;
-	}
-	.social_media2{
-		display: block;
-		margin-left: 5%;
 	}
 }
 

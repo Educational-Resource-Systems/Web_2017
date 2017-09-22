@@ -133,9 +133,9 @@ function footer(){
 document.write('\
             <div id="footerGroup">\
             <div class="notlast_footerButton" id="footerButton"><div>\
-                <div id="emailIcon"><a href="mailto:info@educationalresource.com"><div><img class="footerIcon" src="img/btn/btn_email.png" /></div><div>info@educationalresource.com</div></a></div></div></div>\
+                <div><a href="mailto:info@educationalresource.com"><div><img class="footerIcon" src="img/btn/btn_email.png" /></div><div>info@educationalresource.com</div></a></div></div></div>\
             <div class="notlast_footerButton" id="footerButton"><div>\
-                <div id="phoneIcon"><a href="tel:17328420202"><div><img class="footerIcon" src="img/btn/btn_phone.png" /></div><div>732.842.0202</div></a></div></div></div>\
+                <div><a href="tel:17328420202"><div><img class="footerIcon" src="img/btn/btn_phone.png" /></div><div>732.842.0202</div></a></div></div></div>\
             <div id="footerButton">\
                 <div><div><img class="footerIcon" src="img/btn/btn_location.png" /></div>\
                     <div><a target="_blank" href="https://goo.gl/maps/QDHETZKE1nG2">The Galleria at 2 Bridge Ave, #623<br />\
