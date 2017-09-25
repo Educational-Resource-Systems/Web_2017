@@ -280,6 +280,32 @@
 		display: inline;
 		vertical-align: sub;
 	}
+	
+	#forTheRecord > div.section_image{
+		width: 33%;
+		display: inline-block;
+	}
+	
+	.imageTitleBox {
+		position: relative;
+		margin-top: -25px;
+		z-index: 999;
+	}
+	
+	.imageTitleBox > .titleBox{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.imageTitleLine{
+		position: relative;
+		padding-top: 65px;
+	}
+	
+	.imageTitleLine > #titleLine{
+		margin-top: 0;
+		z-index: 1;
+	}
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
@@ -539,6 +565,9 @@
 	#text-box > h2, .subHeadText h2 {
 		margin-right: auto;
 		margin-left: auto;
+	}
+	#forTheRecord > div{
+		width: 100%;
 	}
 }
 

@@ -157,7 +157,7 @@ cursor: pointer;
 }
 
 #nav { width: 800px; float: right; margin-top: 23px;}
-#logo {  cursor:pointer; background: url('../img/ERS_logo.png')no-repeat; background-size:198px 69px; width: 198px; height: 69px; color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 12px; margin-left:15px; color: #fff; font-family: 'Avenir', sans-serif; font-weight: bold; }
+#logo {  cursor:pointer; background: url('../img/ERS_logo.svg')no-repeat; background-size:198px 69px; width: 198px; height: 69px; color: #fff; text-decoration: none; float: left; font-size: 30px; margin-top: 12px; margin-left:15px; color: #fff; font-family: 'Avenir', sans-serif; font-weight: bold; }
 #nav ul {
 list-style: none;
 display: block;
