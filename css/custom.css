@@ -16,7 +16,7 @@
 		margin-right: auto;
 	}
 	
-	#newsMain:after{
+	#newsMain::after, .services::after{
 		clear: both;
 		content: '';
 		display: block;
@@ -281,15 +281,17 @@
 		vertical-align: sub;
 	}
 	
-	#forTheRecord > div.section_image{
+	.imageSection > div.section_image{
 		width: 33%;
 		display: inline-block;
+		vertical-align: middle;
 	}
 	
 	.imageTitleBox {
 		position: relative;
 		margin-top: -25px;
-		z-index: 999;
+		padding-bottom: 20px;
+		z-index: 5;
 	}
 	
 	.imageTitleBox > .titleBox{
@@ -302,10 +304,72 @@
 		padding-top: 65px;
 	}
 	
+	.imageTitleLine.top_of_box{
+		padding-top: 0px;
+	}
+	
+	.imageTitleBox.top_of_box{
+		margin-top: -25px;
+	}
+	
 	.imageTitleLine > #titleLine{
 		margin-top: 0;
 		z-index: 1;
 	}
+	
+	.imageSection > div.section_image > div{
+		margin: 0 auto;
+		width: 75%;
+	}
+	
+	.imageSection > div.section_image > div > img {
+		width: 40%;
+		float: left;
+	}
+	
+	.imageSection.withoutText > div.section_image > div > img {
+		width: 100%;
+	}
+	
+	.imageSection > div.section_image > div > div{
+		font-size: 20px;
+		float: left;
+		width: 60%;
+		margin-top: 45px;
+	}
+	
+	.imageSection.imageAddText > div.section_image{
+		margin-bottom: 20px;
+	}
+	
+	.imageSection.imageAddText{
+		padding-bottom: 20px;
+	}
+	
+	.imageSection.imageAddText > div.section_image > div > div{
+		margin-top: 25px;
+	}
+	
+	.imageSection > div.section_image > div > div > p{
+		font-size: 12px;
+	}
+	
+	.imageSection{
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+	
+	#mainBlock{
+		background-color: #0089BE;
+		color: #fff;
+	}
+	
+	#advantage{
+		background-image: url(../img/home_bg_text.png);
+		background-size:cover;
+		background-repeat: no-repeat;
+	}
+	
 
 @media only screen and (min-width: 1051px) {
 	#footerButton {
@@ -440,6 +504,22 @@
 	#quotes_about, #block{
 		display: none;
 	}
+	.imageSection > div.section_image{
+		width: 49%;
+	}
+	.imageSection > div.section_image > div > div{
+		margin-top: 30px;
+		font-size: 12px;
+	}
+	#forTheRecord, #advantage{
+		background-size: cover;
+	}
+	.imageSection.imageAddText > div.section_image > div > div{
+		font-size: 20px;
+	}
+	.imageSection.imageAddText > div.section_image > div > div{
+		margin-top: 10px;
+	}
 }
 
 @media only screen and (max-width: 525px) {
@@ -566,8 +646,28 @@
 		margin-right: auto;
 		margin-left: auto;
 	}
-	#forTheRecord > div{
+	.imageSection > div{
 		width: 100%;
+	}
+	.imageSection > div.section_image{
+		width: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.imageSection > div.section_image > div {
+		margin: 0 auto;
+		width: 50%;
+	}
+	.imageSection.imageAddText > div.section_image > div {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.imageSection > div.section_image > div > div{
+		width: 55%;
+	}
+	.imageSection. > div.section_image > div > div {
+		margin-top: 20px;
+		font-size: 9px;
 	}
 }
 
@@ -576,6 +676,13 @@
 		width: 100%;
 		margin-left: 20%;
 		margin-right: 20%;
+	}
+	.titleBox{
+		width: 90%;
+	}
+	.titleBox p{
+		font-size: 1em;
+		padding-top: 20px;
 	}
 }
 
